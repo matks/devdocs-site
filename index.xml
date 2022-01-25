@@ -216,7 +216,7 @@ This is a link to Configuration
       
       <guid>https://devdocs.prestashop.com/8/contribute/documentation/shortcodes/ref/</guid>
       <description>Internal and cross links Cross links To link to another page in the documentation, use ref:
-[This is a link to Configuration]({{&amp;lt; ref &amp;quot;1.7/basics/configuration.md&amp;quot; &amp;gt;}})  Rendered result:
+[This is a link to Configuration]({{&amp;lt; ref &amp;quot;/8/basics/configuration.md&amp;quot; &amp;gt;}})  Rendered result:
 This is a link to Configuration
  Don&amp;rsquo;t forget to put the link between double quotes. Internal links To a link that points to a specific point in the current page, use relref:
 [This is a link to the first title]({{&amp;lt; relref &amp;quot;#cross-links&amp;quot; &amp;gt;}})  Rendered result:</description>
@@ -260,7 +260,7 @@ Any PrestaShop module, once installed on an online shop, can interact with one o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/testing/introduction/</guid>
-      <description>How testing works in PrestaShop  PrestaShop is a complex software and uses automated testing to ensure that the new additions to the codebase do not break existing behaviors.
+      <description>How testing works in PrestaShop PrestaShop is a complex software and uses automated testing to ensure that the new additions to the codebase do not break existing behaviors.
 Automated tests are located in tests and tests-legacy folders.
 What kind of tests do PrestaShop use? In the tests folder, you will find:
  Unit tests Integration tests User interface tests  Unit tests Unit tests are powered by PHPUnit. They test one and only one php class, mocking/stubbing any dependencies that class has.</description>
@@ -359,32 +359,11 @@ Install the library Prerequisites  You need a server with mod_rewrite enabled Yo
     </item>
     
     <item>
-      <title>Technical tools</title>
-      <link>https://devdocs.prestashop.com/8/modules/sell/technical-tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/modules/sell/technical-tools/</guid>
-      <description>Technical Tools &amp;amp; Information Technical Tools: 3 tools to help you get off to a good start 1. The Validator The Validator ( https://validator.prestashop.com ) is a tool created to check if your module is technically compatible with the PrestaShop standards. You can:
- upload a zip. or specify the URL of your GitHub repository (that has to be public).  The Validator then automatically creates a detailed report explaining what needs to be improved/changed in your module.</description>
-    </item>
-    
-    <item>
       <title>The Product Form before 1.7.8</title>
       <link>https://devdocs.prestashop.com/1.7/development/page-reference/back-office/product/form/product-form-before-1-7-8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/development/page-reference/back-office/product/form/product-form-before-1-7-8/</guid>
-      <description>The Product Form before 1.7.8 The product form is divided into multiple sub forms, here is a list that defines each sub forms along with its fields:
-Main form This form is created by the controller which combines a few different form types for each tab.
-   Form type Fields Field type Description     ProductInformation   This Form type is used for step1 or &amp;ldquo;Basic settings&amp;rdquo; tab    type_product ChoiceType Type of product: Standard, virtual or Pack of Product    inputPackItems TypeaheadProductPackCollectionType List of products (for Pack of product)    name TranslateType Product name (localized)    description TranslateType Product description (localized)    description_short TranslateType Product short description (localized)    features CollectionType [ProductFeature] List of sub forms for product Feature entity    id_manufacturer ChoiceType One of the ManufacturerCore    active CheckboxType Boolean to indicate if Product is active    price_shortcut MoneyType Product price (tax excluded)    price_ttc_shortcut MoneyType Product price (tax included)    qty_0_shortcut NumberType Product stock quantity    categories ChoiceCategoriesTreeType List of associated categories    id_category_default ChoiceType One of the Category as default    new_category SimpleCategory Sub form to add and associate a new Category entity    ignore null N/A    related_products TypeaheadProductCollectionType List of related products   ProductPrice   This Form type is used for step2 or &amp;ldquo;Pricing&amp;rdquo; tab    price MoneyType Product price (tax excluded)    price_ttc MoneyType Product price (tax included)    ecotax MoneyType Product eco tax (tax included)    id_tax_rules_group ChoiceType One of the TaxRulesGroup entity    on_sale CheckboxType Boolean to indicate if Product is on sale    wholesale_price MoneyType Wholesale/cost Product price (tax excluded)    unit_price MoneyType Price per unit (tax included)    unity TextType Unity description (Per kilo, per litre, &amp;hellip;)    specific_price ProductSpecificPrice Sub form to add and associate a new SpecificPrice entity    *specificPricePriority_* ChoiceType List of criteria to define priorities to apply specific prices    specificPricePriorityToAll CheckboxType Boolean to indicate if the priorities criteria must be applied on ALL products   ProductQuantity   This Form type is used for step3 or &amp;ldquo;Quantities&amp;rdquo; tab    attributes TextType Text field used to select attributes for Combination entity generation    advanced_stock_management CheckboxType Boolean to indicate if Advanced stock management is enable for this Product (available only if PS_ADVANCED_STOCK_MANAGEMENT is enabled)    depends_on_stock ChoiceType Select stock policy when using advanced stock management (based on stock or manual)    pack_stock_type ChoiceType Pack stock management type (Decrement pack only, products only, both or default configuration PS_PACK_STOCK_TYPE)    qty_0 NumberType Define product stock quantity    out_of_stock ChoiceType Out of stock policy (Allow orders, Deny orders, or default configuration PS_ORDER_OUT_OF_STOCK)    minimal_quantity NumberType Minimum quantity for sale    location TextType Stock location    low_stock_threshold NumberType Quantity that defines low stock is reached    low_stock_alert CheckboxType Enable email alert when low stock is reached    available_now TranslateType Label when in stock (localized)    available_later TranslateType Label when out of stock (and back order allowed) (localized)    available_date DatePickerType Availability date    virtual_product ProductVirtual For virtual product: Specify if a file is associated, and download limitations (number of download, expiration, &amp;hellip;)   ProductShipping   This Form type is used for step4 or &amp;ldquo;Shipping&amp;rdquo; tab    width NumberType Product width    height NumberType Product height    depth NumberType Product depth    weight NumberType Product weight    additional_shipping_cost MoneyType Shipping fees    selectedCarriers ChoiceType Selection of available carriers    additional_delivery_times ChoiceType Specify delivery time (None, default, specific)    delivery_out_stock TranslateType Specific label for out of stock delivery time (localized)    delivery_in_stock TranslateType Specific label for in stock delivery time (localized)    *warehouse_combination_* CollectionType [ProductWarehouseCombination] List of sub forms for WarehouseProductLocation entity   ProductSeo   This Form type is used for step5 or &amp;ldquo;SEO&amp;rdquo; tab    meta_title TranslateType Meta title used for search engine (localized)    meta_description TranslateType Meta description used for search engine (localized)    link_rewrite TranslateType Link rewrite part used when generating Friendly urls (localized)    redirect_type ChoiceType Redirection HTTP code when product is inactive (Permanent/temporary redirection to category/product, or not found)    id_type_redirected TypeaheadProductCollectionType Product/Category ID to redirect to   ProductOptions   This Form type is used for step6 or &amp;ldquo;Options&amp;rdquo; tab    visibility ChoiceType Product visibility is lists (Everywhere, catalog only, search only, nowhere)    tags TranslateType List of tags (localized)    display_options FormType Various display options (available_for_order, show_price, online_only)    mpn TextType Manufacturer Part Number    upc TextType UPC barcode    ean13 TextType EAN-13 or JAN barcode    isbn TextType ISBN code    reference TextType Product reference    show_condition CheckboxType Display condition of product    condition ChoiceType Type of condition for product (New, used, refurbished)    suppliers ChoiceType List of Supplier for this product    default_supplier TextType One of the Supplier as default one    *supplier_combination_* CollectionType [ProductSupplierCombination] List of sub forms for ProductSupplier entity (details Price and reference for each supplier)    custom_fields CollectionType [ProductCustomField] List of sub forms for ProductCustom entity (define possible custom texts, images, &amp;hellip;)    attachment_product ProductAttachement Sub form to create and associate an Attachment entity (instructions, documentation, recipes, &amp;hellip;)    attachments ChoiceType List of Attachment for this product    Sub forms Here is a description of the sub forms used in the main one</description>
-    </item>
-    
-    <item>
-      <title>The Product Form before 1.7.8</title>
-      <link>https://devdocs.prestashop.com/8/development/page-reference/back-office/product/form/product-form-before-1-7-8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/development/page-reference/back-office/product/form/product-form-before-1-7-8/</guid>
       <description>The Product Form before 1.7.8 The product form is divided into multiple sub forms, here is a list that defines each sub forms along with its fields:
 Main form This form is created by the controller which combines a few different form types for each tab.
    Form type Fields Field type Description     ProductInformation   This Form type is used for step1 or &amp;ldquo;Basic settings&amp;rdquo; tab    type_product ChoiceType Type of product: Standard, virtual or Pack of Product    inputPackItems TypeaheadProductPackCollectionType List of products (for Pack of product)    name TranslateType Product name (localized)    description TranslateType Product description (localized)    description_short TranslateType Product short description (localized)    features CollectionType [ProductFeature] List of sub forms for product Feature entity    id_manufacturer ChoiceType One of the ManufacturerCore    active CheckboxType Boolean to indicate if Product is active    price_shortcut MoneyType Product price (tax excluded)    price_ttc_shortcut MoneyType Product price (tax included)    qty_0_shortcut NumberType Product stock quantity    categories ChoiceCategoriesTreeType List of associated categories    id_category_default ChoiceType One of the Category as default    new_category SimpleCategory Sub form to add and associate a new Category entity    ignore null N/A    related_products TypeaheadProductCollectionType List of related products   ProductPrice   This Form type is used for step2 or &amp;ldquo;Pricing&amp;rdquo; tab    price MoneyType Product price (tax excluded)    price_ttc MoneyType Product price (tax included)    ecotax MoneyType Product eco tax (tax included)    id_tax_rules_group ChoiceType One of the TaxRulesGroup entity    on_sale CheckboxType Boolean to indicate if Product is on sale    wholesale_price MoneyType Wholesale/cost Product price (tax excluded)    unit_price MoneyType Price per unit (tax included)    unity TextType Unity description (Per kilo, per litre, &amp;hellip;)    specific_price ProductSpecificPrice Sub form to add and associate a new SpecificPrice entity    *specificPricePriority_* ChoiceType List of criteria to define priorities to apply specific prices    specificPricePriorityToAll CheckboxType Boolean to indicate if the priorities criteria must be applied on ALL products   ProductQuantity   This Form type is used for step3 or &amp;ldquo;Quantities&amp;rdquo; tab    attributes TextType Text field used to select attributes for Combination entity generation    advanced_stock_management CheckboxType Boolean to indicate if Advanced stock management is enable for this Product (available only if PS_ADVANCED_STOCK_MANAGEMENT is enabled)    depends_on_stock ChoiceType Select stock policy when using advanced stock management (based on stock or manual)    pack_stock_type ChoiceType Pack stock management type (Decrement pack only, products only, both or default configuration PS_PACK_STOCK_TYPE)    qty_0 NumberType Define product stock quantity    out_of_stock ChoiceType Out of stock policy (Allow orders, Deny orders, or default configuration PS_ORDER_OUT_OF_STOCK)    minimal_quantity NumberType Minimum quantity for sale    location TextType Stock location    low_stock_threshold NumberType Quantity that defines low stock is reached    low_stock_alert CheckboxType Enable email alert when low stock is reached    available_now TranslateType Label when in stock (localized)    available_later TranslateType Label when out of stock (and back order allowed) (localized)    available_date DatePickerType Availability date    virtual_product ProductVirtual For virtual product: Specify if a file is associated, and download limitations (number of download, expiration, &amp;hellip;)   ProductShipping   This Form type is used for step4 or &amp;ldquo;Shipping&amp;rdquo; tab    width NumberType Product width    height NumberType Product height    depth NumberType Product depth    weight NumberType Product weight    additional_shipping_cost MoneyType Shipping fees    selectedCarriers ChoiceType Selection of available carriers    additional_delivery_times ChoiceType Specify delivery time (None, default, specific)    delivery_out_stock TranslateType Specific label for out of stock delivery time (localized)    delivery_in_stock TranslateType Specific label for in stock delivery time (localized)    *warehouse_combination_* CollectionType [ProductWarehouseCombination] List of sub forms for WarehouseProductLocation entity   ProductSeo   This Form type is used for step5 or &amp;ldquo;SEO&amp;rdquo; tab    meta_title TranslateType Meta title used for search engine (localized)    meta_description TranslateType Meta description used for search engine (localized)    link_rewrite TranslateType Link rewrite part used when generating Friendly urls (localized)    redirect_type ChoiceType Redirection HTTP code when product is inactive (Permanent/temporary redirection to category/product, or not found)    id_type_redirected TypeaheadProductCollectionType Product/Category ID to redirect to   ProductOptions   This Form type is used for step6 or &amp;ldquo;Options&amp;rdquo; tab    visibility ChoiceType Product visibility is lists (Everywhere, catalog only, search only, nowhere)    tags TranslateType List of tags (localized)    display_options FormType Various display options (available_for_order, show_price, online_only)    mpn TextType Manufacturer Part Number    upc TextType UPC barcode    ean13 TextType EAN-13 or JAN barcode    isbn TextType ISBN code    reference TextType Product reference    show_condition CheckboxType Display condition of product    condition ChoiceType Type of condition for product (New, used, refurbished)    suppliers ChoiceType List of Supplier for this product    default_supplier TextType One of the Supplier as default one    *supplier_combination_* CollectionType [ProductSupplierCombination] List of sub forms for ProductSupplier entity (details Price and reference for each supplier)    custom_fields CollectionType [ProductCustomField] List of sub forms for ProductCustom entity (define possible custom texts, images, &amp;hellip;)    attachment_product ProductAttachement Sub form to create and associate an Attachment entity (instructions, documentation, recipes, &amp;hellip;)    attachments ChoiceType List of Attachment for this product    Sub forms Here is a description of the sub forms used in the main one</description>
@@ -493,7 +472,8 @@ Do you need this?
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/contribute/contribute-pull-requests/contribute_using_localhost/</guid>
-      <description>How to become a Core Contributor If you&amp;rsquo;re reading this, thank you! This means you&amp;rsquo;re interested in contributing to PrestaShop. You probably are a PrestaShop developer, and your use of the project is slightly different from ours. For instance, there are few differences between PrestaShop 1.7 (the release) and the branch 1.7 of PrestaShop in the GitHub repository. This is because we create a release usable by everyone from our sources.</description>
+      <description>How to become a Core Contributor If you&amp;rsquo;re reading this, thank you! This means you&amp;rsquo;re interested in contributing to PrestaShop. You probably are a PrestaShop developer, and your use of the project is slightly different from ours. For instance, there are few differences between a PrestaShop zip release package and the GitHub repository. This is because the release package is a build, whereas the GitHub repository contains the sources.
+To be able to contribute you need:</description>
     </item>
     
     <item>
@@ -683,16 +663,6 @@ How to add row actions to Grid? Let&amp;rsquo;s take an example from Category gr
     </item>
     
     <item>
-      <title>How to work with the Search Form in 1.7.5</title>
-      <link>https://devdocs.prestashop.com/8/development/components/grid/tutorials/work-with-search-form/in-1-7-5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/development/components/grid/tutorials/work-with-search-form/in-1-7-5/</guid>
-      <description>How to work with the Search Form The grid component allows to filter its content, to manage the filtering you will need to define the following elements:
- GridDefinition::getFilters Filters class Controllers:  Search action List action Reset filter action    Add Filters into GridDefinition &amp;lt;?php final class EmailLogsDefinitionFactory extends AbstractGridDefinitionFactory { /** * @param string $resetActionUrl * @param string $redirectionUrl */ public function __construct($resetActionUrl, $redirectionUrl) { $this-&amp;gt;resetActionUrl = $resetActionUrl; $this-&amp;gt;redirectionUrl = $redirectionUrl; } /** * {@inheritdoc} */ protected function getId() { return &amp;#39;email_logs&amp;#39;; } .</description>
-    </item>
-    
-    <item>
       <title>Image management</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/tutorials/advanced-use/image-management/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -812,17 +782,6 @@ We are going to show you how to spare time so that you can pretty much &amp;ldqu
     </item>
     
     <item>
-      <title>Technical validation - Key steps</title>
-      <link>https://devdocs.prestashop.com/8/modules/sell/techvalidation-keysteps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/modules/sell/techvalidation-keysteps/</guid>
-      <description>Technical Validation: key steps Have you ever wondered how the PrestaShop Addons Team proceeds with the validation ?
-We are going to show you how to spare time so that you can pretty much &amp;ldquo;validate&amp;rdquo; your own module before submitting it to the Addons Marketplace. First you might want to read the Technical Tools and the Good Practices.
-1. The Basics As you probably know, there are 3 types of submissions : New, Minor update, Major update.</description>
-    </item>
-    
-    <item>
       <title>Testing access to the Webservice</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/tutorials/testing-access/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -885,9 +844,8 @@ Let&amp;rsquo;s add hook related code to main module class demovieworderhooks:
       
       <guid>https://devdocs.prestashop.com/8/scale/benchmark/back-office/</guid>
       <description>How to benchmark your PrestaShop Shop (Back-office) Benchmark methodology In order to benchmark the performances of the backoffice of your shop, you will use the Gatling testing tool.
- Note: Backoffice benchmark is only possible starting with PrestaShop 1.7.4.0!
-  If you want still want to run the test for version &amp;lt; 1.7.4.0, take a look at this PR: https://github.com/PrestaShop/PrestaShop/pull/8876
- What is Gatling? Gatling is a stress tool. Development is currently focusing on HTTP support.</description>
+What is Gatling? Gatling is a stress tool. Development is currently focusing on HTTP support. We won’t explain here the fundamentals of Gatling, but for more details I suggest you to have a look at the Gatling project.
+Automatic run of Gatling on dockerized installation (recommended) Prerequisite  git docker  Clone the repository To follow these instructions, you will use the following github repository: PrestaShop performance project</description>
     </item>
     
     <item>
@@ -896,7 +854,7 @@ Let&amp;rsquo;s add hook related code to main module class demovieworderhooks:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/modules/testing/ci-cd/</guid>
-      <description>Continuous Integration / Continuous Deployment In the previous page we detailed some testing tools and how to execute them. Thay may be run locally, in order to check the code is fine before pushing it to a remote git repository, but they can also be automatically run by a dedicated test environment after each push. This can be useful to prevent code being pushed to production if one of your tools reports an issue you missed.</description>
+      <description>Continuous Integration / Continuous Deployment In the previous page we detailed some testing tools and how to execute them. They may be run locally, in order to check that the code is fine before pushing it to a remote git repository, but they can also be automatically run by a dedicated test environment after each push. This can be useful to prevent code being pushed to production if one of your tools reports an issue you missed.</description>
     </item>
     
     <item>
@@ -905,7 +863,7 @@ Let&amp;rsquo;s add hook related code to main module class demovieworderhooks:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/modules/testing/ci-cd/</guid>
-      <description>Continuous Integration / Continuous Deployment In the previous page we detailed some testing tools and how to execute them. Thay may be run locally, in order to check the code is fine before pushing it to a remote git repository, but they can also be automatically run by a dedicated test environment after each push. This can be useful to prevent code being pushed to production if one of your tools reports an issue you missed.</description>
+      <description>Continuous Integration / Continuous Deployment In the previous page we detailed some testing tools and how to execute them. They may be run locally, in order to check that the code is fine before pushing it to a remote git repository, but they can also be automatically run by a dedicated test environment after each push. This can be useful to prevent code being pushed to production if one of your tools reports an issue you missed.</description>
     </item>
     
     <item>
@@ -923,7 +881,7 @@ Let&amp;rsquo;s add hook related code to main module class demovieworderhooks:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/contribute/contribute-pull-requests/contribute_using_docker/</guid>
-      <description>How to become a Core Contributor using Docker If you&amp;rsquo;re reading this, thank you! This means you&amp;rsquo;re interested in contributing to PrestaShop. You probably are a PrestaShop developer, and your use of the project is slightly different from ours. For instance, there are few differences between PrestaShop 1.7 (the release) and the branch 1.7 of PrestaShop in the GitHub repository. This is because we create a release usable by everyone from our sources.</description>
+      <description>How to become a Core Contributor using Docker If you&amp;rsquo;re reading this, thank you! This means you&amp;rsquo;re interested in contributing to PrestaShop. You probably are a PrestaShop developer, and your use of the project is slightly different from ours. For instance, there are few differences between a PrestaShop zip release package and the GitHub repository. This is because the release package is a build, whereas the GitHub repository contains the sources.</description>
     </item>
     
     <item>
@@ -1020,17 +978,6 @@ License is compatible A module and its dependencies must be compatible with the 
     </item>
     
     <item>
-      <title>Validation checklist</title>
-      <link>https://devdocs.prestashop.com/8/modules/sell/techvalidation-checklist/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/modules/sell/techvalidation-checklist/</guid>
-      <description>Module validation checklist First of all, the submitted addon must pass the validator. Some reports will lead to an automatic decline if found. The following rules are manually checked by the modules team.
-Common rules Code review Module structure is followed The module respected the expected structure.
-License is compatible A module and its dependencies must be compatible with the OSL (core) and AFL (modules and themes) licenses used to manage and distribute the PrestaShop open source project.</description>
-    </item>
-    
-    <item>
       <title>Widgets</title>
       <link>https://devdocs.prestashop.com/1.7/modules/concepts/widgets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1118,7 +1065,7 @@ As we explained in a previous tutorial the webservice provides two resource sche
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/development/database/structure/</guid>
-      <description>Maintaining the database Database structure definition Global definition The database structure of PrestaShop can be found in install/data/db_structure.sql (1.7.3.x releases example).
+      <description>Maintaining the database Database structure definition Global definition The database structure of PrestaShop can be found in install/data/db_structure.sql (1.7.8.x releases example).
 It is used one time, during the installation of PrestaShop. It contains the structure of almost all tables. If a table needs to be added or modified, this the file you should open.
 Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables are now linked to Doctrine entities (i.</description>
     </item>
@@ -1131,7 +1078,7 @@ Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables are now
       <guid>https://devdocs.prestashop.com/8/development/database/structure/</guid>
       <description>Maintaining the database Database structure definition Global definition The database structure of PrestaShop can be found in install/data/db_structure.sql (1.7.3.x releases example).
 It is used one time, during the installation of PrestaShop. It contains the structure of almost all tables. If a table needs to be added or modified, this the file you should open.
-Table in DB but not in db_structure.sql With PrestaShop 1.7, some tables are now linked to Doctrine entities (i.</description>
+Table in DB but not in db_structure.sql Some tables are now linked to Doctrine entities (i.e stocks).</description>
     </item>
     
     <item>
@@ -1200,7 +1147,7 @@ As part of this migration, PrestaShop is switching its templating engine from Sm
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/contribute/contribute-pull-requests/create-pull-request/</guid>
-      <description>Hot to publish your contribution to GitHub Once your changes sound good and tests pass on your local computer, you can contribute to the open source project by submitting these changes as a Pull Request on GitHub.
+      <description>How to publish your contribution to GitHub Once your changes sound good and tests pass on your local computer, you can contribute to the open source project by submitting these changes as a Pull Request on GitHub.
 First you need to push your branch on GitHub:
 git push origin add-emoticons-support  You will need to use your GitHub credentials. Now you can create your Pull Request on GitHub. If you don&amp;rsquo;t know how to do it, you can read GitHub documentation.</description>
     </item>
@@ -1211,7 +1158,7 @@ git push origin add-emoticons-support  You will need to use your GitHub credenti
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/contribute/contribute-pull-requests/create-pull-request/</guid>
-      <description>Hot to publish your contribution to GitHub Once your changes sound good and tests pass on your local computer, you can contribute to the open source project by submitting these changes as a Pull Request on GitHub.
+      <description>How to publish your contribution to GitHub Once your changes sound good and tests pass on your local computer, you can contribute to the open source project by submitting these changes as a Pull Request on GitHub.
 First you need to push your branch on GitHub:
 git push origin add-emoticons-support  You will need to use your GitHub credentials. Now you can create your Pull Request on GitHub. If you don&amp;rsquo;t know how to do it, you can read GitHub documentation.</description>
     </item>
@@ -1302,7 +1249,7 @@ Thinking about it, we could improve the current grid to highlight business-drive
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/tutorials/modify-grid-in-module/</guid>
       <description>How to modify an existing Grid in a module If you need to modify an existing Grid, like inverting two columns for instance, this is really easy to do it in a module thanks to the available hooks.
-Business use case In this tutorial, we will try to improve the user experience of the Customers listing Grid (this page will be available in 1.7.6).
+Business use case In this tutorial, we will try to improve the user experience of the Customers listing Grid.
 Thinking about it, we could improve the current grid to highlight business-driven information:</description>
     </item>
     
@@ -1616,7 +1563,7 @@ Available options    Properties Type Expected value     field string required Re
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/badge/</guid>
-      <description>BadgeColumn Type  This basic BadgeColumn displays a raw field data in Grid, associated with a badge.
+      <description>BadgeColumn Type This basic BadgeColumn displays a raw field data in Grid, associated with a badge.
 Available options    Properties Type Expected value     field string required Record field name which column displays.   badge_type string default: success Indicates which field of the row contains the image source. (Allowed values: success, info, danger, warning)    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\BadgeColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $badgeColumn = new BadgeColumn(&amp;#39;total_spent&amp;#39;); $badgeColumn-&amp;gt;setName(&amp;#39;Sales&amp;#39;); $badgeColumn-&amp;gt;setOptions([ &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;total_spent&amp;#39;, &amp;#39;badge_type&amp;#39; =&amp;gt; &amp;#39;success&amp;#39;, &amp;#39;empty_value&amp;#39; =&amp;gt; &amp;#39;--&amp;#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($badgeColumn); </description>
     </item>
     
@@ -1680,7 +1627,7 @@ Available options    Properties Type Expected value     field string required Th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/data/</guid>
-      <description>DataColumn Type  The most basic column is DataColumn. It is used to display raw field data in Grid.
+      <description>DataColumn Type The most basic column is DataColumn. It is used to display raw field data in Grid.
 Available options    Properties Type Expected value     field string required The record field name that the column displays.    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\DataColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $dataColumn = new DataColumn(&amp;#39;id_product&amp;#39;); $dataColumn-&amp;gt;setName(&amp;#39;ID&amp;#39;); $dataColumn-&amp;gt;setOptions([ &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;id_product&amp;#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($dataColumn); </description>
     </item>
     
@@ -1700,7 +1647,7 @@ Available options    Properties Type Expected value     field string required Th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/datetime/</guid>
-      <description>DateTimeColumn Type  You can use this column type in your Grid to format datetime values. It is common to get datetime values (e.g. Created at, Updated at &amp;amp; etc.) from the database and format them before displaying.
+      <description>DateTimeColumn Type You can use this column type in your Grid to format datetime values. It is common to get datetime values (e.g. Created at, Updated at &amp;amp; etc.) from the database and format them before displaying.
 Available options    Properties Type Expected value     field string required The record field name that the column displays.   format string default: Y-m-d H:i:s The format to use when formatting datetime values.</description>
     </item>
     
@@ -1711,7 +1658,7 @@ Available options    Properties Type Expected value     field string required Th
       
       <guid>https://devdocs.prestashop.com/1.7/development/architecture/domain/domain-services/</guid>
       <description>Domain services As mentioned in CQRS principles, a Command is a representation of a single domain use case. To prevent Command Handlers from duplicating code and depending on each other, it is usually best to avoid implementing the actual logic in the Command Handler itself, and delegate it to Domain Services instead. These services are responsible for logic such as:
- Persisting the entities (a.k.a ObjectModel in current prestashop architecture) data into database Validating the entities Performing various modifications of related data structures etc.</description>
+ Persisting the entities (a.k.a. ObjectModel in current prestashop architecture) data into database Validating the entities Performing various modifications of related data structures etc.</description>
     </item>
     
     <item>
@@ -1721,7 +1668,7 @@ Available options    Properties Type Expected value     field string required Th
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/domain/domain-services/</guid>
       <description>Domain services As mentioned in CQRS principles, a Command is a representation of a single domain use case. To prevent Command Handlers from duplicating code and depending on each other, it is usually best to avoid implementing the actual logic in the Command Handler itself, and delegate it to Domain Services instead. These services are responsible for logic such as:
- Persisting the entities (a.k.a ObjectModel in current prestashop architecture) data into database Validating the entities Performing various modifications of related data structures etc.</description>
+ Persisting the entities (a.k.a. ObjectModel in current prestashop architecture) data into database Validating the entities Performing various modifications of related data structures etc.</description>
     </item>
     
     <item>
@@ -1769,28 +1716,6 @@ It is strongly recommended not to leave your backups at the root of your store o
     </item>
     
     <item>
-      <title>How to become a maintainer</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/how-to-become-a-maintainer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/how-to-become-a-maintainer/</guid>
-      <description>How to become a maintainer In the PrestaShop project, maintainers are contributors with merge rights.
-The maintainer status is a position of great power, but it also carries great responsibility. As gatekeepers to the project&amp;rsquo;s code, maintainers are ultimately responsible for every contribution that is included in the project.
-Requirements to become a maintainer  Active participation in the project  Display a record of several accepted, quality Pull Requests having received little or no objections from maintainers.</description>
-    </item>
-    
-    <item>
-      <title>How to become a maintainer</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/how-to-become-a-maintainer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/how-to-become-a-maintainer/</guid>
-      <description>How to become a maintainer In the PrestaShop project, maintainers are contributors with merge rights.
-The maintainer status is a position of great power, but it also carries great responsibility. As gatekeepers to the project&amp;rsquo;s code, maintainers are ultimately responsible for every contribution that is included in the project.
-Requirements to become a maintainer  Active participation in the project  Display a record of several accepted, quality Pull Requests having received little or no objections from maintainers.</description>
-    </item>
-    
-    <item>
       <title>How to create an Empty state</title>
       <link>https://devdocs.prestashop.com/1.7/development/components/grid/tutorials/create-empty-state/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -1808,7 +1733,7 @@ Creating an Empty state By default, when Grid is empty user sees it as:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/tutorials/create-empty-state/</guid>
-      <description>How to create an Empty state  Grid component allows developer to configure Empty state to make empty grid look more appealing for user.
+      <description>How to create an Empty state Grid component allows developer to configure Empty state to make empty grid look more appealing for user.
 Creating an Empty state By default, when Grid is empty user sees it as:
  Empty Suppliers grid   Unfortunately, it&amp;rsquo;s not very engaging, so let&amp;rsquo;s create Empty state for it! There are a few steps you have to follow:
  You have to create a template for it and put it in src/PrestaShopBundle/Resources/views/Admin/Common/Grid/Blocks/EmptyState directory, so Grid component can locate it.</description>
@@ -1873,7 +1798,8 @@ For unit tests, we strongly encourage you to base your test on the PHPUnit&amp;r
       
       <guid>https://devdocs.prestashop.com/8/testing/how-to-launch-tests/</guid>
       <description>How to execute the PrestaShop automatic test suite Executing Unit/integration test suites At least four test suites are available, testing different parts of PrestaShop:
- Legacy tests: heritage from PrestaShop 1.6: mix of unit, integration and functional tests; Legacy controllers: added to help with the Symfony migration, ensures that old Back Office controllers are still runnable; Admin tests: specific to PrestaShop 1.7, tests src/Core and src/Adapter classes; Symfony specific tests: specific to PrestaShop 1.</description>
+ Unit tests Integrations tests Functional tests Legacy endpoints  Each suite needs a specific PHPUnit configuration. This is why each test suite has a specific composer command:
+ composer unit-tests composer integration-tests composer integration-behaviour-tests composer phpunit-endpoints  You can execute the entire PHPUnit test suites using the composer test-all command.</description>
     </item>
     
     <item>
@@ -1932,7 +1858,7 @@ Using this column could open you to XSS attacks, if you are using this column ta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/html/</guid>
-      <description>HtmlColumn Type  Displays raw data without any escaping. Can be used to display HTML in grid.
+      <description>HtmlColumn Type Displays raw data without any escaping. Can be used to display HTML in grid.
 Using this column could open you to XSS attacks, if you are using this column take steps to make sure that data displayed by this column is secure. If you are using form together with grid, safe way is to use FormattedTextareaType . Available options    Properties Type Expected value     field string required The record field name that the column displays.</description>
     </item>
     
@@ -1952,7 +1878,7 @@ Available options    Properties Type Expected value     src_field string require
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/image/</guid>
-      <description>ImageColumn Type  This column is used to display an image from a row. You need to specify which field of the row contains the image source.
+      <description>ImageColumn Type This column is used to display an image from a row. You need to specify which field of the row contains the image source.
 Available options    Properties Type Expected value     src_field string required Indicates which field of the row contains the image source    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\ImageColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $imageColumn = new ImageColumn(&amp;#39;flag&amp;#39;); $imageColumn-&amp;gt;setName(&amp;#39;Flag&amp;#39;); $imageColumn-&amp;gt;setOptions([ &amp;#39;src_field&amp;#39; =&amp;gt; &amp;#39;flag&amp;#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($imageColumn); </description>
     </item>
     
@@ -2012,7 +1938,7 @@ Available options    Properties Type Expected value     field string required Th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/link/</guid>
-      <description>LinkColumn Type  This LinkColumn displays a raw field data encapsulated in a link (very useful for adding an edition link on a name, for example).
+      <description>LinkColumn Type This LinkColumn displays a raw field data encapsulated in a link (very useful for adding an edition link on a name, for example).
 Available options    Properties Type Expected value     field string required The record field name that the column displays.   route string required The route used to generate the link url.   route_param_name string required The parameter name used by the route to generate the url.</description>
     </item>
     
@@ -2034,36 +1960,10 @@ Listing pages  These pages allow the user to browse PrestaShop content using lis
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/migration-guide/strategy/</guid>
-      <description>This is a summary of the current Migration Strategy. It provides an overview of our current vision, in the end of this year 2020, of the Symfony Migration project.
+      <description>Migration project and strategy This is a summary of the current Migration Strategy. It provides an overview of our current vision, in the end of this year 2020, of the Symfony Migration project.
 Different kind of pages Back-Office pages can be classified in four categories:
  Configuration / Settings Form pages  These pages allow the user to modify configuration settings in PrestaShop.
 Listing pages  These pages allow the user to browse PrestaShop content using listings.</description>
-    </item>
-    
-    <item>
-      <title>Preliminary tasks</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/preliminary-tasks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/preliminary-tasks/</guid>
-      <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
-Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&amp;rsquo;t need to be performed again for the final release).</description>
-    </item>
-    
-    <item>
-      <title>Preliminary tasks</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/preliminary-tasks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/preliminary-tasks/</guid>
-      <description>Preliminary tasks Before you can start your build, you must make sure that the project is ready to be built.
-1. Create the new version in Addons Marketplace and update native module compatibility This step requires special rights.
-Ask a maintainer from the PrestaShop Company with administrative rights on the Addons Marketplace to perform this step.
- This only needs to be done once per release.
-(i.e. if done for a beta, it doesn&amp;rsquo;t need to be performed again for the final release).</description>
     </item>
     
     <item>
@@ -2072,16 +1972,6 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/development/components/hook/register-new-hook/</guid>
-      <description>How to register a new Hook in PrestaShop This is basically three steps:
- dispatch the hook in the code (in templates or PHP classes/files); update the hooks xml definition of Installer; update the hooks table for &amp;ldquo;Auto Upgrade&amp;rdquo; system;  Dispatching hooks Most of the time, you will dispatch the hook using an instance of HookDispatcher. It can be retrieved from the service container and/or injected, as it&amp;rsquo;s done for example in Form Handlers:</description>
-    </item>
-    
-    <item>
-      <title>Register a new hook</title>
-      <link>https://devdocs.prestashop.com/8/development/components/hook/register-new-hook/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/development/components/hook/register-new-hook/</guid>
       <description>How to register a new Hook in PrestaShop This is basically three steps:
  dispatch the hook in the code (in templates or PHP classes/files); update the hooks xml definition of Installer; update the hooks table for &amp;ldquo;Auto Upgrade&amp;rdquo; system;  Dispatching hooks Most of the time, you will dispatch the hook using an instance of HookDispatcher. It can be retrieved from the service container and/or injected, as it&amp;rsquo;s done for example in Form Handlers:</description>
     </item>
@@ -2102,6 +1992,42 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
       
       <guid>https://devdocs.prestashop.com/8/themes/getting-started/setting-up-your-local-environment/</guid>
       <description>Setting up your local environment Now that you intend to building a theme for PrestaShop, you are better off keeping all your development work on your machine. The main advantage is that it makes it possible for you to entirely bypass the process of uploading your files on your online server in order to test your changes. Another advantage is that a local test environment enables you to test code without the risk of breaking your production store.</description>
+    </item>
+    
+    <item>
+      <title>Subscribing to a Hook</title>
+      <link>https://devdocs.prestashop.com/8/development/components/hook/subscribing-to-hook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/hook/subscribing-to-hook/</guid>
+      <description>Subscribing to a Hook The Hook component acts as a registry for hook subscriptions, storing which modules have subscribed to which hook. Multiple modules can subscribe to the same hook, and a single module can subscribe to multiple hooks.
+Modules subscribe to hooks through the registerHook() static function:
+Hook::registerHook(Module $moduleInstance, string|string[] $subscribedHooks, ?int[] $shopIds = null): bool This method returns true if the operation is successful, false otherwise.
+Parameters $moduleInstance : Instance of the module subscribing to the hook</description>
+    </item>
+    
+    <item>
+      <title>Symfony Form Theme for PrestaShop</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/form-theme/form-theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/form-theme/form-theme/</guid>
+      <description>Symfony Form Theme for PrestaShop PrestaShop usage PrestaShop relies on Twig&amp;rsquo;s FormRenderer, which requires a Form Theme to function. Bootstrap 4 Form Theme is a popular one.
+The Form Theme is a set of Twig macros and functions that provide a way to render the different parts of a form: every label, input type, and specific option has its own macro.
+Example for the date widget:
+{%- block date_widget -%}{%- if widget == &amp;#39;single_text&amp;#39; -%}{{ block(&amp;#39;form_widget_simple&amp;#39;) }}{%- else -%}&amp;lt;div {{ block(&amp;#39;widget_container_attributes&amp;#39;) }}&amp;gt; {{- date_pattern|replace({ &amp;#39;{{ year }}&amp;#39;: form_widget(form.</description>
+    </item>
+    
+    <item>
+      <title>Symfony Form Theme for PrestaShop</title>
+      <link>https://devdocs.prestashop.com/8/development/components/form/form-theme/form-theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/form/form-theme/form-theme/</guid>
+      <description>Symfony Form Theme for PrestaShop PrestaShop usage PrestaShop relies on Twig&amp;rsquo;s FormRenderer, which requires a Form Theme to function. Bootstrap 4 Form Theme is a popular one.
+The Form Theme is a set of Twig macros and functions that provide a way to render the different parts of a form: every label, input type, and specific option has its own macro.
+Example for the date widget:
+{%- block date_widget -%}{%- if widget == &amp;#39;single_text&amp;#39; -%}{{ block(&amp;#39;form_widget_simple&amp;#39;) }}{%- else -%}&amp;lt;div {{ block(&amp;#39;widget_container_attributes&amp;#39;) }}&amp;gt; {{- date_pattern|replace({ &amp;#39;{{ year }}&amp;#39;: form_widget(form.</description>
     </item>
     
     <item>
@@ -2133,7 +2059,7 @@ Ask a maintainer from the PrestaShop Company with administrative rights on the A
       <description>Templates &amp;amp; layouts PrestaShop template file are based on the Smarty 3 template engine.
 All template files must be stored in the theme&amp;rsquo;s templates/ subfolder. For instance, the default theme has its template files in the following folder: /themes/classic/templates.
 Directory structure Templates are then split between various subfolders.
- /_partials/ Code shared accross the whole site like header, footer or notifications. /catalog/ Product page, product/brand/supplier listing, search result and such. /checkout/ Cart, delivery options, payement options, order confirmations and such.</description>
+ /_partials/ Code shared accross the whole site like header, footer or notifications. /catalog/ Product page, product/brand/supplier listing, search result and such. /checkout/ Cart, delivery options, payment options, order confirmations and such.</description>
     </item>
     
     <item>
@@ -2223,7 +2149,7 @@ Required files Here is the complete list of required files:
       
       <guid>https://devdocs.prestashop.com/1.7/development/components/grid/columns-reference/toggle/</guid>
       <description>ToggleColumn Type  This ToggleColumn is used to display booleans, it will display an icon instead of the value. If the user clicks on it, this triggers a toggle of the boolean value.
-Available options    Properties Type Expected value     field string required The record field name that the column displays.   primary_field string required The record field name that the column displays.   route string required The route used to generated link url.</description>
+Warning: the ajax call trigger is subordinated to the loading of the relative js extension (ColumnTogglingExtension). That is not automatic but have to be done manually if the grid does not have any other Toggle Column by default.</description>
     </item>
     
     <item>
@@ -2232,8 +2158,8 @@ Available options    Properties Type Expected value     field string required Th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/toggle/</guid>
-      <description>ToggleColumn Type  This ToggleColumn is used to display booleans, it will display an icon instead of the value. If the user clicks on it, this triggers a toggle of the boolean value.
-Available options    Properties Type Expected value     field string required The record field name that the column displays.   primary_field string required The record field name that the column displays.   route string required The route used to generated link url.</description>
+      <description>ToggleColumn Type This ToggleColumn is used to display booleans, it will display an icon instead of the value. If the user clicks on it, this triggers a toggle of the boolean value.
+Warning: the ajax call trigger is subordinated to the loading of the relative js extension (ColumnTogglingExtension). That is not automatic but have to be done manually if the grid does not have any other Toggle Column by default. You can use the global component to load the extension.</description>
     </item>
     
     <item>
@@ -2254,8 +2180,8 @@ To add a new test, you need to add a new entry in the Data Provider of SurvivalT
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/migration-guide/testing/unit/</guid>
       <description>Unit testing Smoke testing A smoke test is a really simple and basic test that ensure the page will load with the right HTTP code. This won&amp;rsquo;t ensure the page will works as expected but if the test fails, this ensure the page is not functional.
-To add a new test, you need to add a new entry in the Data Provider of SurvivalTest class:
-&amp;lt;?php namespace LegacyTests\Integration\PrestaShopBundle\Controller\Admin; // ... /** * @group demo * * To execute these tests: use &amp;#34;.</description>
+To add a new test, you need to add a new entry in the Data Provider of FrameworkBundleAdminControllerTest class:
+&amp;lt;?php namespace Tests\Integration\PrestaShopBundle\Controller\Admin; // ... /** * @group demo * * To execute these tests: use &amp;#34;.</description>
     </item>
     
     <item>
@@ -2334,7 +2260,7 @@ Available options    Properties Type Expected value     actions array default: n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/action/</guid>
-      <description>ActionColumn Type  This column type allows adding actions to your Grid rows. The action targets the corresponding row. For more info about possible actions see Actions reference.
+      <description>ActionColumn Type This column type allows adding actions to your Grid rows. The action targets the corresponding row. For more info about possible actions see Actions reference.
 Available options    Properties Type Expected value     actions array default: null List of actions assigned to each row.    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\ActionColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $actionColumn = new ActionColumn(&amp;#39;actions&amp;#39;); $actionColumn-&amp;gt;setName(&amp;#39;Actions&amp;#39;); $actionColumn-&amp;gt;setOptions([ &amp;#39;actions&amp;#39; =&amp;gt; [ -&amp;gt;add((new LinkRowAction(&amp;#39;delete&amp;#39;)) -&amp;gt;setIcon(&amp;#39;delete&amp;#39;) -&amp;gt;setOptions([ &amp;#39;route&amp;#39; =&amp;gt; &amp;#39;admin_custom_route&amp;#39;, &amp;#39;route_param_name&amp;#39; =&amp;gt; &amp;#39;mailId&amp;#39;, &amp;#39;route_param_field&amp;#39; =&amp;gt; &amp;#39;id_mail&amp;#39;, &amp;#39;confirm_message&amp;#39; =&amp;gt; &amp;#39;Delete selected item?</description>
     </item>
     
@@ -2354,8 +2280,8 @@ Database During behat tests the actual database queries are executed, therefore 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/migration-guide/testing/behat/</guid>
-      <description>Behat testing It is important that you get familiar with the Behats principles before reading further. You can find the official behat documentation here. A behaviour (behat) tests are a part of integration tests. They allow testing how multiple components are working together. In PrestaShop, behats are used to test the Application and Domain layer integration - basically all the [CQRS]({{ relref &amp;ldquo;/8/development/architecture/domain/cqrs&amp;rdquo; }}) commands and queries.
-Database During behat tests the actual database queries are executed, therefore before testing you need to run a command composer create-test-db to create a test database.</description>
+      <description>Behat testing It is important that you get familiar with the Behats principles before reading further. You can find the official behat documentation here. A behaviour (behat) tests are a part of integration tests. They allow testing how multiple components are working together. In PrestaShop, behats are used to test the Application and Domain layer integration - basically all the CQRS commands and queries.
+Database Global dump During behat tests the actual database queries are executed, therefore before testing you need to run a command composer create-test-db to create a test database.</description>
     </item>
     
     <item>
@@ -2374,7 +2300,7 @@ Available options    Properties Type Expected value     bulk_field string requir
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/bulk-action/</guid>
-      <description>BulkActionColumn Type  This column type allows adding bulk action checkboxes to your Grid. This only adds the checkbox in the grid, you can then manage bulk actions via javascript.
+      <description>BulkActionColumn Type This column type allows adding bulk action checkboxes to your Grid. This only adds the checkbox in the grid, you can then manage bulk actions via javascript.
 Available options    Properties Type Expected value     bulk_field string required: The record field name that will be used as the bulk action checkbox value.    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Common\BulkActionColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $bulkActionColumn = new BulkActionColumn(&amp;#39;bulk_action&amp;#39;); $bulkActionColumn-&amp;gt;setName(&amp;#39;&amp;#39;); // it is common to set an empty name for bulk action columns $bulkActionColumn-&amp;gt;setOptions([ &amp;#39;bulk_field&amp;#39; =&amp;gt; &amp;#39;id_product&amp;#39;, ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($bulkActionColumn); </description>
     </item>
     
@@ -2398,28 +2324,6 @@ Available options    Properties Type Expected value     bulk_field string requir
       <description>Configure Apache Httpd The following file is provided as an example configuration for your Apache server. It may be incomplete, and remember you must adapt it for your own server&amp;rsquo;s needs!
  In Apache 2.4, Order Allow,Deny has been replaced by Require all granted. We assume you are using Apache Http 2.4 or higher.
  With mod_php/PHP-CGI &amp;lt;VirtualHost *:80&amp;gt; # or 443 for SSL support ServerName example.com DocumentRoot /path/to/prestashop # SSLEngine on # SSLCertificateFile /etc/apache2/ssl/example.</description>
-    </item>
-    
-    <item>
-      <title>Create the build</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/create-build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/create-build/</guid>
-      <description>Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
-2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request.</description>
-    </item>
-    
-    <item>
-      <title>Create the build</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/create-build/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/create-build/</guid>
-      <description>Create a build package Once preliminary tasks have been completed, the project is ready to be built.
-1. Communicate Starting this step means that the Development phase of this release is over. Before you go further, make sure to tick the &amp;ldquo;Development&amp;rdquo; box in the Release Tracker GitHub issue (there is one per version, see the 1.7.6.6 example).
-2. Create a local branch for your build The following tasks will require you to perform changes and submit them as a Pull Request.</description>
     </item>
     
     <item>
@@ -2489,6 +2393,17 @@ Please respect the following rules:</description>
     </item>
     
     <item>
+      <title>Dispatching a Hook</title>
+      <link>https://devdocs.prestashop.com/8/development/components/hook/dispatching-hook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/hook/dispatching-hook/</guid>
+      <description>Dispatching a Hook Hooks are placed everywhere throughout the software. Whenever a given hook is dispatched, the Hook component will check which modules subscribed to that hook and notify them by successively calling each subscriber&amp;rsquo;s callback.
+Hooks are dispatched using the Hook::exec() function.
+Hook::exec( string $hookName, array $arguments, ?int $moduleId = null, bool $returnArray = false, bool $checkExceptions = true, bool $usePush = false, int $shopId = null, bool $chain = false ): mixed This method returns the result of all hook notification callbacks.</description>
+    </item>
+    
+    <item>
       <title>Head</title>
       <link>https://devdocs.prestashop.com/1.7/themes/reference/templates/head/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2507,11 +2422,11 @@ There are 2 importants files to use:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/themes/reference/templates/head/</guid>
-      <description>Head The head part is very important in term of SEO and performances.
+      <description>Head The head part is very important in terms of SEO and performance.
 Have look at Classic&amp;rsquo;s head part to see real life examples.
-Assets PrestaShop 1.7 changed the way asset works and it means the way to it&amp;rsquo;s added inside the &amp;lt;head&amp;gt; tag of your page changed a bit too.
-There are 2 importants files to use:
- _partials/stylesheets.tpl _partials/javascript.tpl  These 2 files are used to take full advantage of the new features of 1.</description>
+Assets PrestaShop 1.7 changed the way asset work, and it means the way they are added inside the &amp;lt;head&amp;gt; tag of your page changed a bit too.
+There are 2 important files to use:
+ _partials/stylesheets.tpl _partials/javascript.tpl  These 2 files are used to take full advantage of the features like async loading for javascript or automatic inline for CSS.</description>
     </item>
     
     <item>
@@ -2599,6 +2514,28 @@ The database structure may change with each new release of PrestaShop, but major
     </item>
     
     <item>
+      <title>List of forms</title>
+      <link>https://devdocs.prestashop.com/1.7/development/components/form/form-theme/form-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/development/components/form/form-theme/form-pages/</guid>
+      <description>List of forms This section states when a page that contains a Symfony form has been migrated to Symfony, and when the form has been simplified to rely on the PrestaShop UI Kit Form theme.
+You can find the detailed status of the project on the GitHub tracking issue.
+   Page Migrated in version Form simplified in version     Advanced Parameters     Advanced Parameters &amp;gt; Performance 1.</description>
+    </item>
+    
+    <item>
+      <title>List of forms</title>
+      <link>https://devdocs.prestashop.com/8/development/components/form/form-theme/form-pages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/form/form-theme/form-pages/</guid>
+      <description>List of forms This section states when a page that contains a Symfony form has been migrated to Symfony, and when the form has been simplified to rely on the PrestaShop UI Kit Form theme.
+You can find the detailed status of the project on the GitHub tracking issue.
+   Page Migrated in version Form simplified in version     Advanced Parameters     Advanced Parameters &amp;gt; Performance 1.</description>
+    </item>
+    
+    <item>
       <title>Make PrestaShop 1.6 modules compatible with 1.7</title>
       <link>https://devdocs.prestashop.com/1.7/modules/core-updates/1.6-1.7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -2636,7 +2573,7 @@ Available options    Properties Type Expected value     id_field string required
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/position/</guid>
-      <description>PositionColumn Type  This column type allows you to define rows position using a drag and drop feature. Besides this column definition you need to use our javascript PositionExtension and prepare a route to manage the positions update. To help you create this controller you can use our PositionUpdater component.
+      <description>PositionColumn Type This column type allows you to define rows position using a drag and drop feature. Besides this column definition you need to use our javascript PositionExtension and prepare a route to manage the positions update. To help you create this controller you can use our PositionUpdater component.
 Available options    Properties Type Expected value     id_field string required The record field containing its id.</description>
     </item>
     
@@ -2661,46 +2598,11 @@ Available options    Properties Type Expected value     id_field string required
     </item>
     
     <item>
-      <title>Summary of how GitHub Issues and Pull Requests are processed</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/summary-github-lifecycle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/summary-github-lifecycle/</guid>
-      <description>Summary of how GitHub Issues and Pull Requests are processed GitHub is the main tool used by maintainers to manage the PrestaShop project.
-This page quickly describes how Issues and Pull Requests are processed on GitHub.
-The teams On GitHub, there are mainly three teams working together on the project.
- Product Team: this team takes care of the product vision of the software. It has Product Managers, UX Designers and Wording Managers.</description>
-    </item>
-    
-    <item>
-      <title>Summary of how GitHub Issues and Pull Requests are processed</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/summary-github-lifecycle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/summary-github-lifecycle/</guid>
-      <description>Summary of how GitHub Issues and Pull Requests are processed GitHub is the main tool used by maintainers to manage the PrestaShop project.
-This page quickly describes how Issues and Pull Requests are processed on GitHub.
-The teams On GitHub, there are mainly three teams working together on the project.
- Product Team: this team takes care of the product vision of the software. It has Product Managers, UX Designers and Wording Managers.</description>
-    </item>
-    
-    <item>
       <title>Symfony bridge for hooks</title>
       <link>https://devdocs.prestashop.com/1.7/development/components/hook/symfony-bridge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/development/components/hook/symfony-bridge/</guid>
-      <description>Symfony bridge for hooks In Back-Office, migrated pages are powered by Symfony. The powerful Symfony Event Dispatcher has been chosen to replace, in the long term, hooks. However, in order to preserve backward compatibility, both systems coexist in 1.7.
-It is important that modules which subscribe to a hook are correctly notified no matter where the hook is dispatched from, be it in legacy code or modern code.
-In legacy code, hooks are dispatched using Hook::exec().</description>
-    </item>
-    
-    <item>
-      <title>Symfony bridge for hooks</title>
-      <link>https://devdocs.prestashop.com/8/development/components/hook/symfony-bridge/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/development/components/hook/symfony-bridge/</guid>
       <description>Symfony bridge for hooks In Back-Office, migrated pages are powered by Symfony. The powerful Symfony Event Dispatcher has been chosen to replace, in the long term, hooks. However, in order to preserve backward compatibility, both systems coexist in 1.7.
 It is important that modules which subscribe to a hook are correctly notified no matter where the hook is dispatched from, be it in legacy code or modern code.
 In legacy code, hooks are dispatched using Hook::exec().</description>
@@ -2793,7 +2695,8 @@ What is Value Object? Value Objects (VO for short) are small, simple, immutable 
       
       <guid>https://devdocs.prestashop.com/1.7/basics/installation/nginx/</guid>
       <description>Configure Nginx The following file is provided as an example configuration for your Nginx server. It may be incomplete, and remember you must adapt it for your own server&amp;rsquo;s needs!
-server { # Ipv4  listen 80; # IPv6  # listen [::]:80;  # SSL Ipv4 &amp;amp; v6  # listen 443 ssl http2;  # listen [::]:443 ssl;  # Your SSL Certificates, don&amp;#39;t forget to take a look at Certbot (https://certbot.</description>
+Once you are comfortable with your setup make sure to review our guide on how to optimize your Nginx configuration to better suit your requirements.
+server { # IPv4.  listen 80; listen 443 ssl http2; # IPv6.  # listen [::]:80;  # listen [::]:443 ssl http2;  # [EDIT] Your domain name(s) go here.</description>
     </item>
     
     <item>
@@ -2803,7 +2706,20 @@ server { # Ipv4  listen 80; # IPv6  # listen [::]:80;  # SSL Ipv4 &amp;amp; v6  
       
       <guid>https://devdocs.prestashop.com/8/basics/installation/nginx/</guid>
       <description>Configure Nginx The following file is provided as an example configuration for your Nginx server. It may be incomplete, and remember you must adapt it for your own server&amp;rsquo;s needs!
-server { # Ipv4  listen 80; # IPv6  # listen [::]:80;  # SSL Ipv4 &amp;amp; v6  # listen 443 ssl http2;  # listen [::]:443 ssl;  # Your SSL Certificates, don&amp;#39;t forget to take a look at Certbot (https://certbot.</description>
+Once you are comfortable with your setup make sure to review our guide on how to optimize your Nginx configuration to better suit your requirements.
+server { # IPv4.  listen 80; listen 443 ssl http2; # IPv6.  # listen [::]:80;  # listen [::]:443 ssl http2;  # [EDIT] Your domain name(s) go here.</description>
+    </item>
+    
+    <item>
+      <title>Adding a new Core hook</title>
+      <link>https://devdocs.prestashop.com/8/development/components/hook/register-new-hook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/hook/register-new-hook/</guid>
+      <description>How to add a new Core Hook Although hooks are automatically created the first time they are subscribed to, new hooks is added to the Core itself need to be properly registered and documented.
+Here are the steps you need to follow.
+1. Dispatch the new hook The very fisrt step is just to dispatch the new hook wherever you need it, as explained in Dispatching a Hook.
+2. Update the Hooks definition file All known hooks are registered in the ps_hook database table.</description>
     </item>
     
     <item>
@@ -2905,7 +2821,7 @@ By &amp;ldquo;user-oriented scenario&amp;rdquo; we mean a scenario that is a ser
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/testing/how-to-create-your-own-behat-tests/</guid>
-      <description>How to create your own Behat tests or add tests to PrestaShop  Behat tests are great if you want to validate the behavior of a component of the code and/or follow a user-oriented scenario.
+      <description>How to create your own Behat tests or add tests to PrestaShop Behat tests are great if you want to validate the behavior of a component of the code and/or follow a user-oriented scenario.
 By &amp;ldquo;component&amp;rdquo; we usually mean a group of classes being called together, sometimes using an external dependency (a web API or a database system like MySQL).
 By &amp;ldquo;user-oriented scenario&amp;rdquo; we mean a scenario that is a series of steps, each step is an action, and at the end of the series there is an expected result</description>
     </item>
@@ -2981,50 +2897,6 @@ Available HTTP methods Most resources can be accessed in a REST manner, with the
     </item>
     
     <item>
-      <title>Release publicly</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/release-publicly/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/release-publicly/</guid>
-      <description>Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
-Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
- Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</description>
-    </item>
-    
-    <item>
-      <title>Release publicly</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/release-publicly/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/release-publicly/</guid>
-      <description>Release the version publicly Once the QA team has greenlighted your build, you can move forward with the public release.
-Make certain you have go for publish! Also, avoid starting this process after 4 PM or on a Friday. 1. Merge security PRs on GitHub If there are unmerged security PRs:
- Merge them on GitHub and publishing their security advisories. Rebase the local build branch that you created on the previous step to remove the merge commits from the security PRs you merged manually before.</description>
-    </item>
-    
-    <item>
-      <title>Reviewing Pull Requests</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/reviewing-pull-requests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/reviewing-pull-requests/</guid>
-      <description>Reviewing Pull Requests The code review process is generally regarded as a good practice and is adopted by hundreds of software projects around the world.
-It provides lot of benefits:
- it helps spotting errors in the code, because we all make mistakes and it can be hard to find one&amp;rsquo;s own mistakes. it helps improving code quality not only by ensuring it&amp;rsquo;s readable and understandable, but also by pinpointing design, performance or security issues that may have been unintentionally introduced by the author.</description>
-    </item>
-    
-    <item>
-      <title>Reviewing Pull Requests</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/reviewing-pull-requests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/reviewing-pull-requests/</guid>
-      <description>Reviewing Pull Requests The code review process is generally regarded as a good practice and is adopted by hundreds of software projects around the world.
-It provides lot of benefits:
- it helps spotting errors in the code, because we all make mistakes and it can be hard to find one&amp;rsquo;s own mistakes. it helps improving code quality not only by ensuring it&amp;rsquo;s readable and understandable, but also by pinpointing design, performance or security issues that may have been unintentionally introduced by the author.</description>
-    </item>
-    
-    <item>
       <title>Supported branches</title>
       <link>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/supported-branches/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3041,9 +2913,10 @@ For example, the 1.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/contribute/contribution-guidelines/supported-branches/</guid>
-      <description>Supported branches Maintainers should only accept contributions for branches which are subject to new releases.
-Once a minor &amp;ldquo;dot-zero&amp;rdquo; version has been released, no new patch releases will be made for previous versions. This means that only the latest minor version patch branch is supported – with the exception of rare cases, like a security bug being found just before or after a minor release is published.
-For example, the 1.</description>
+      <description>Supported branches Maintainers will only accept contributions for branches which are subject to new releases.
+The development branch (develop) contains the development code for the next minor or major version, and is the natural destination for all contributions.
+The patch version branch (e.g. 8.0.x) contains the code for the next patch release for a given version. This is where some bug fixes are destined, under specific conditions.
+TL;DR When in doubt, target the develop branch.</description>
     </item>
     
     <item>
@@ -3063,9 +2936,9 @@ In the /src folder you&amp;rsquo;ll find 3 main folders with different purposes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/file-structure/understanding-src-folder/</guid>
-      <description>Understanding the &amp;ldquo;src&amp;rdquo; folder The main idea when doing the 1.7 release was to use Symfony as a replacement for our own PrestaShop framework.
-In the /src folder you&amp;rsquo;ll find 3 main folders with different purposes:
- Core: contains business logic classes Adapter: business logic classes that still depend on legacy framework (for instance: Context, Dispatcher or constants); PrestaShopBundle: classes that acts as a glue between PrestaShop classes and Symfony  Core Core classes belong to the PrestaShop\PrestaShop\Core namespace.</description>
+      <description>Understanding the &amp;ldquo;src&amp;rdquo; folder In the /src folder you&amp;rsquo;ll find 3 main folders with different purposes:
+ Core: contains business logic classes Adapter: business logic classes that still depend on legacy framework (for instance: Context, Dispatcher or constants); PrestaShopBundle: classes that acts as a glue between PrestaShop classes and Symfony  Core Core classes belong to the PrestaShop\PrestaShop\Core namespace.
+This is the default destination for any new code, as long as it follows these rules:</description>
     </item>
     
     <item>
@@ -3135,6 +3008,17 @@ Extended features: Shortcodes Hugo uses special short codes for many things.</de
     </item>
     
     <item>
+      <title>Creating your own distribution</title>
+      <link>https://devdocs.prestashop.com/8/basics/deployment/distribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/basics/deployment/distribution/</guid>
+      <description>Creating you own PrestaShop distribution A release is a build package which includes external libaries, static assets (like compiled javascript files) and modules.
+A distribution is a special release that you can build with your own specific modules.
+Why create a distribution? If you usually include (or exclude) modules in your PrestaShop deployments, creating your own distribution will allow you to save time when installing PrestaShop for your customers. Any extra module bundled in the distribution will be installed and enabled automatically during PrestaShop&amp;rsquo;s installation.</description>
+    </item>
+    
+    <item>
       <title>Cheat sheet</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/cheat-sheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -3196,34 +3080,6 @@ How to contribute Contributors wishing to edit a module&amp;rsquo;s files should
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/migration-guide/controller-routing/</guid>
       <description>Controller and Routing Before creating a new symfony controller please read and follow principles described in Symfony controllers &amp;amp; routing. Controllers are responsible for performing &amp;ldquo;Actions&amp;rdquo;. Actions are methods of Controllers which mapped to a route, and that return a Response. Migration tips  If you consider that a legacy Controller needs to be split into multiple controllers (for example: different URLs), it&amp;rsquo;s the right time to do it. Controllers are not available for override and can be regarded as internal classes, therefore we don&amp;rsquo;t consider changing Controller&amp;rsquo;s namespace as a backward-compatibility break.</description>
-    </item>
-    
-    <item>
-      <title>Final steps</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/final-steps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/releasing-prestashop/final-steps/</guid>
-      <description>Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
-(i.e. if not for betas and RCs).
- This step requires special rights.
-Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
- Once this step is done, update the Release Tracker GitHub issue by ticking the &amp;ldquo;Available for upgrade&amp;rdquo; box.
-2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions.</description>
-    </item>
-    
-    <item>
-      <title>Final steps</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/final-steps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/releasing-prestashop/final-steps/</guid>
-      <description>Final steps 1. Update API stream for 1-click upgrade This should only be done for stable releases.
-(i.e. if not for betas and RCs).
- This step requires special rights.
-Ask a maintainer from the PrestaShop Company with administrative rights on the PrestaShop API repository to perform this step.
- Once this step is done, update the Release Tracker GitHub issue by ticking the &amp;ldquo;Available for upgrade&amp;rdquo; box.
-2. Create Docker images for the new version  Checkout the project and create a new branch Modify the file versions.</description>
     </item>
     
     <item>
@@ -3327,7 +3183,18 @@ In difference with 3rd party modules, native modules&#39; translation catalogues
       
       <guid>https://devdocs.prestashop.com/8/development/internationalization/translation/native-module-translation/</guid>
       <description>Native module translation To find out the basics of module translation, read Module Translation. In PrestaShop lingo, &amp;ldquo;native modules&amp;rdquo; refers to all the modules that are bundled and distributed with the Core.
-In difference with 3rd party modules, native modules&#39; translation catalogues are distributed with the Core itself. Thanks to this, Native modules are translated using the New translation system since 1.7.0.</description>
+In difference with 3rd party modules, native modules&#39; translation catalogues are distributed with the Core itself. Thanks to this, Native modules are translated using the New translation system introduced in PrestaShop 1.7.</description>
+    </item>
+    
+    <item>
+      <title>Symfony bridge for hooks</title>
+      <link>https://devdocs.prestashop.com/8/development/components/hook/symfony-bridge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/hook/symfony-bridge/</guid>
+      <description>Symfony bridge for hooks In Back-Office, migrated pages are powered by Symfony. The powerful Symfony Event Dispatcher has been chosen to replace, in the long term, hooks. However, in order to preserve backward compatibility, both systems coexist.
+It is important that modules which subscribe to a hook are correctly notified no matter where the hook is dispatched from, be it in legacy code or modern code.
+In legacy code, hooks are dispatched using Hook::exec().</description>
     </item>
     
     <item>
@@ -3411,7 +3278,7 @@ $ php cli-upgrade.</description>
       
       <guid>https://devdocs.prestashop.com/1.7/contribute/contribution-guidelines/compatible-licenses/</guid>
       <description>Compatible licenses The PrestaShop open source project is distributed under the OSL 3.0 license. All dependencies included and distributed with PrestaShop must be compatible with this license.
-Software dependencies Below is a list of the known compatible licenses that can accepted for software dependencies:
+Software dependencies Below is a list of the known compatible licenses that can be accepted for software dependencies:
  AFL Apache BSD CC-O EPL EUPL ISC MIT Unlicense  Artwork Artwork (including but not limited to: icons, pictures and fonts) is usually distributed with specific licenses.</description>
     </item>
     
@@ -3422,7 +3289,7 @@ Software dependencies Below is a list of the known compatible licenses that can 
       
       <guid>https://devdocs.prestashop.com/8/contribute/contribution-guidelines/compatible-licenses/</guid>
       <description>Compatible licenses The PrestaShop open source project is distributed under the OSL 3.0 license. All dependencies included and distributed with PrestaShop must be compatible with this license.
-Software dependencies Below is a list of the known compatible licenses that can accepted for software dependencies:
+Software dependencies Below is a list of the known compatible licenses that can be accepted for software dependencies:
  AFL Apache BSD CC-O EPL EUPL ISC MIT Unlicense  Artwork Artwork (including but not limited to: icons, pictures and fonts) is usually distributed with specific licenses.</description>
     </item>
     
@@ -3571,7 +3438,7 @@ The employee&amp;rsquo;s name field.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/employee-name-with-avatar/</guid>
-      <description>EmployeeNameWithAvatarColumn Type  This is a special type that allows you to add a column with the employee name and its avatar to your Grid. You can see how it looks by default:
+      <description>EmployeeNameWithAvatarColumn Type This is a special type that allows you to add a column with the employee name and its avatar to your Grid. You can see how it looks by default:
  Employee name with avatar column   Available options    Properties Type Expected value     field string required Employee&amp;rsquo;s name field.    field type: string required
 The employee&amp;rsquo;s name field.</description>
     </item>
@@ -3583,9 +3450,9 @@ The employee&amp;rsquo;s name field.</description>
       
       <guid>https://devdocs.prestashop.com/1.7/development/compile-assets/</guid>
       <description>How to compile assets Some components in PrestaShop, like Javascript or SCSS files, need to be compiled to be usable.
-Requirements We use Webpack to compile assets. You only need NodeJS from 8.x to 12.x (get it here), NPM will take care of it all.
-Assets that need to be compiled  Back Office  Default theme  SASS files
-Located in admin-dev/themes/default/sass   New theme  SCSS files</description>
+Requirements PrestaShop uses Webpack to compile assets, which requires NodeJS (get it here).
+You will need a different NodeJS version depending on the PrestaShop version you&amp;rsquo;re working with:
+   PrestaShop Versions NodeJS Versions NPM Versions     1.7.0~1.7.6 8.x 5.x   1.7.7 10.x 6.x   1.</description>
     </item>
     
     <item>
@@ -3597,7 +3464,7 @@ Located in admin-dev/themes/default/sass   New theme  SCSS files</description>
       <description>How to compile assets Some components in PrestaShop, like Javascript or SCSS files, need to be compiled to be usable.
 Requirements We use Webpack to compile assets. PrestaShop is using NodeJS (get it here), NPM will take care of it all.
 Here is a list of compatibility:
-   PrestaShop Versions NodeJS Versions     8.x 14.x    If you can not manage to compile assets, you may be using an older version of PrestaShop.</description>
+   PrestaShop Versions NodeJS Versions NPM Versions     8.x 14.x or 16.x 7.x or 8.x    If you can not manage to compile assets, you may be using an older version of PrestaShop.</description>
     </item>
     
     <item>
@@ -3634,7 +3501,7 @@ Available options    Properties Type Expected value     field string required Re
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/grid/columns-reference/severity-level/</guid>
-      <description>SeverityLevelColumn Type  Use this column to display severity level in your Grid.
+      <description>SeverityLevelColumn Type Use this column to display severity level in your Grid.
 Available options    Properties Type Expected value     field string required Record field name which is used as severity level.   with_message bool default: false Whether to show severity level message in addition with numeric severity level value.    Example usage &amp;lt;?php use PrestaShop\PrestaShop\Core\Grid\Column\Type\Status\SeverityLevelColumn; use PrestaShop\PrestaShop\Core\Grid\Column\ColumnCollection; $severityColumn = new SeverityLevelColumn(&amp;#39;severity&amp;#39;); $severityColumn-&amp;gt;setName(&amp;#39;Severity (1-4)&amp;#39;); $severityColumn-&amp;gt;setOptions([ &amp;#39;field&amp;#39; =&amp;gt; &amp;#39;severity&amp;#39;, &amp;#39;with_message&amp;#39; =&amp;gt; true, // enable severity messages ]); $columns = new ColumnCollection(); $columns-&amp;gt;add($severityColumn); </description>
     </item>
     
@@ -3678,30 +3545,6 @@ How do we use the UIKit? We use it by adding it into our npm dependency, and the
       <guid>https://devdocs.prestashop.com/8/development/architecture/migration-guide/validation/</guid>
       <description>Validation The purpose of validation is to protect the application from failures, state inconsistency, security related issues etc. PrestaShop has few different levels of validation:
  Forms (the CRUD or Settings) - are using Symfony validation constraints to prevent the user from providing invalid information while also enriching the user experience. For example if a form input expects Yes or No, but user submitted value XYZ we want to reject the data and inform the user what was wrong.</description>
-    </item>
-    
-    <item>
-      <title>Release a native PrestaShop module</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/release-a-native-ps-module/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/release-a-native-ps-module/</guid>
-      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:</description>
-    </item>
-    
-    <item>
-      <title>Release a native PrestaShop module</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/release-a-native-ps-module/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/release-a-native-ps-module/</guid>
-      <description>Release a new version of a native PrestaShop module Some modules are embedded within PrestaShop ZIP archives and loaded through Composer package manager. They consequently are listed in the composer.json of the Core project.
-This is what we call &amp;ldquo;native PrestaShop modules&amp;rdquo;. The source code of these modules is hosted on GitHub.
-This page explains what is needed to release these modules.
-Requirements Mandatory requirements The module should be valid which means:</description>
     </item>
     
     <item>
@@ -3799,7 +3642,7 @@ Tabs registration In order to register new links, open your main module class.</
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/webservice/resources/attachments/</guid>
-      <description>Resources for Attachments  Attachment    Name Format Required Max size Description     file isGenericName ✔️ 40    file_name isGenericName ❌ 128    file_size isUnsignedId ❌     mime isCleanHtml ✔️ 128    name isGenericName ✔️ 32    description isCleanHtml ❌     associations  ❌      Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.</description>
+      <description>Resources for Attachments Attachment    Name Format Required Max size Description     file isGenericName ✔️ 40    file_name isGenericName ❌ 128    file_size isUnsignedId ❌     mime isCleanHtml ✔️ 128    name isGenericName ✔️ 32    description isCleanHtml ❌     associations  ❌      Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.</description>
     </item>
     
     <item>
@@ -3843,7 +3686,7 @@ Parameters:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/configuration/backward-compatibility/</guid>
-      <description>Backward compatible configuration storage PrestaShop 1.7 keeps the 1.6 configuration class for backward compatibility.
+      <description>Backward compatible configuration storage PrestaShop 8 maintains the 1.6 configuration class for backward compatibility.
 If you don&amp;rsquo;t need compatibility with 1.6 shops, we suggest using the Configuration service instead.
 Usage Store configuration data Configuration::updateValue(string $key, mixed $value): bool This method returns true if the operation is successful, false otherwise.
 Parameters:
@@ -4413,7 +4256,7 @@ In order to use legacy classes and components in Console, you need to initialize
       <guid>https://devdocs.prestashop.com/8/development/components/console/context-helper/</guid>
       <description>CLI Context helper The legacy framework of PrestaShop was not built to be run from a Command Line.
 The consequence is that many of its functions require specific data to be properly initialized, and these parts are being initialized when an HTTP request is handled by the framework.
-In order to use legacy classes and components in Console, you need to initialize these parts. To make it easy, a LegacyContextLoader helper class was introduced in version 1.</description>
+In order to use legacy classes and components in Console, you need to initialize these parts. To make it easy, you can use the LegacyContextLoader helper class.</description>
     </item>
     
     <item>
@@ -4832,8 +4675,9 @@ If you want the theme to appears in the backoffice, it only needs to contain a c
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/themes/distribution/exporting/</guid>
-      <description>Exporting your theme Creating a valid ZIP file There is no longer any theme data in the database with PrestaShop 1.7. Hence a theme is installed as soon as it is on the disk.
-If you want the theme to appears in the backoffice, it only needs to contain a config/theme.yml file. This will only display it, if you want to select it as your active theme, it has to be valid.</description>
+      <description>Exporting your theme Creating a valid ZIP file A theme is installed as soon as it is on the disk.
+If you want the theme to appears in the backoffice, it only needs to contain a config/theme.yml file. This will only display it, if you want to select it as your active theme, it has to be valid. Read &amp;ldquo;What makes a valid theme&amp;rdquo;.
+Once it is active you can export your theme using the &amp;ldquo;Export current theme&amp;rdquo; button or use the command from your terminal.</description>
     </item>
     
     <item>
@@ -4958,7 +4802,7 @@ This object contains two attributes:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/global-components/</guid>
-      <description>Global JavaScript components  It&amp;rsquo;s a new system available since the 1.7.8 version mainly created for module developers, which allow you to use components we already use in the core without importing it. Here is the ADR where we decided what we should do to avoid this problem.
+      <description>Global JavaScript components Tailored for module developers, this system allows you to use components we already use in the core without importing them. Here is the ADR where we decided what we should do to avoid this problem.
 You are now able to use components we expose to the window.prestashop.component object without importing anything.
 This object contains two attributes:
  component which contain some components you can instantiate; instance which contains every instances of initiated components.</description>
@@ -5069,8 +4913,9 @@ $this-&amp;gt;fields_list = array( &amp;#39;country&amp;#39; =&amp;gt; array( //
       
       <guid>https://devdocs.prestashop.com/1.7/development/components/helpers/helperoptions/</guid>
       <description>The HelperOptions class This helper is used to generate a configuration form, the values of which are stored in the configuration table. Example: the &amp;ldquo;Preferences&amp;rdquo; page.
+The HelperOptions helper is the recommanded way for managing configurations for legacy part.
 Options declaration Fields inside [brackets] are optional. Values between {curly braces} list the possible values for this field.
-$this-&amp;gt;fields_options = array( &amp;#39;general&amp;#39; =&amp;gt; array( [&amp;#39;title&amp;#39;] =&amp;gt; $this-&amp;gt;l(&amp;#39;Carrier options&amp;#39;), // The title of the fieldset. If missing, default is &amp;#39;Options&amp;#39;.  [&amp;#39;top&amp;#39;] =&amp;gt; $this-&amp;gt;l(&amp;#39;Text to display before the fieldset&amp;#39;), // This text is display right above the first.</description>
+$this-&amp;gt;fields_options = [ &amp;#39;general&amp;#39; =&amp;gt; [ &amp;#39;title&amp;#39; =&amp;gt; $this-&amp;gt;l(&amp;#39;Carrier options&amp;#39;), // The title of the fieldset.</description>
     </item>
     
     <item>
@@ -5080,8 +4925,9 @@ $this-&amp;gt;fields_options = array( &amp;#39;general&amp;#39; =&amp;gt; array(
       
       <guid>https://devdocs.prestashop.com/8/development/components/helpers/helperoptions/</guid>
       <description>The HelperOptions class This helper is used to generate a configuration form, the values of which are stored in the configuration table. Example: the &amp;ldquo;Preferences&amp;rdquo; page.
+The HelperOptions helper is the recommanded way for managing configurations for legacy part.
 Options declaration Fields inside [brackets] are optional. Values between {curly braces} list the possible values for this field.
-$this-&amp;gt;fields_options = array( &amp;#39;general&amp;#39; =&amp;gt; array( [&amp;#39;title&amp;#39;] =&amp;gt; $this-&amp;gt;l(&amp;#39;Carrier options&amp;#39;), // The title of the fieldset. If missing, default is &amp;#39;Options&amp;#39;.  [&amp;#39;top&amp;#39;] =&amp;gt; $this-&amp;gt;l(&amp;#39;Text to display before the fieldset&amp;#39;), // This text is display right above the first.</description>
+$this-&amp;gt;fields_options = [ &amp;#39;general&amp;#39; =&amp;gt; [ &amp;#39;title&amp;#39; =&amp;gt; $this-&amp;gt;l(&amp;#39;Carrier options&amp;#39;), // The title of the fieldset.</description>
     </item>
     
     <item>
@@ -5328,28 +5174,6 @@ Execution flow Legacy controllers work best when a Controller performs a single 
       <description>Legacy Controllers Legacy controllers are based on PrestaShop&amp;rsquo;s custom framework and go a long way back. All front controllers and all Admin controllers that haven&amp;rsquo;t been migrated to Symfony yet are based on this.
 Execution flow Legacy controllers work best when a Controller performs a single action, for example, render a page. The process has been divided in several methods, which simplifies customization via method override.
  Execution flow of legacy controllers   </description>
-    </item>
-    
-    <item>
-      <title>License &amp; license compatibility</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/license/</guid>
-      <description>License &amp;amp; license compatibility In order to protect PrestaShop users from patent trolls, it&amp;rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
-The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
-PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under the AFL 3.</description>
-    </item>
-    
-    <item>
-      <title>License &amp; license compatibility</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/license/</guid>
-      <description>License &amp;amp; license compatibility In order to protect PrestaShop users from patent trolls, it&amp;rsquo;s important to make sure that all content included and distributed with PrestaShop is covered under homogeneous license terms.
-The PrestaShop Core software is released under the OSL 3.0 license. Therefore, all original work included in PrestaShop itself must be released under that license as well.
-PrestaShop&amp;rsquo;s Native Modules and the Classic theme are released under the AFL 3.</description>
     </item>
     
     <item>
@@ -5736,10 +5560,9 @@ LoadModule deflate_module modules/mod_deflate.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/scale/webservers/nginx/</guid>
-      <description>Enabling compression As you may be aware of, most of the file transiting from the webserver (with the notable exception of pictures) are text based.
+      <description>Enabling compression As you may be aware of, most of the file transiting from the web server (with the notable exception of pictures) are text based.
 And text files are the most efficient to compress. Though disabled by default, enabling compression is a really quick way to reduce transit and speed up your website up to 80%!
-Here is the way to enable gzip compression to your nginx configuration:
-gzip on; gzip_disable msie6; gzip_vary on; gzip_proxied any; gzip_static on; gzip_buffers 16 8k; gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript image/svg+xml text/js; gzip_http_version 1.</description>
+Important: beware of the associated risk of enabling gzip compression if you are using SSL as noticed in the ngx_http_gzip_module page.</description>
     </item>
     
     <item>
@@ -5748,10 +5571,9 @@ gzip on; gzip_disable msie6; gzip_vary on; gzip_proxied any; gzip_static on; gzi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/scale/webservers/nginx/</guid>
-      <description>Enabling compression As you may be aware of, most of the file transiting from the webserver (with the notable exception of pictures) are text based.
+      <description>Enabling compression As you may be aware of, most of the file transiting from the web server (with the notable exception of pictures) are text based.
 And text files are the most efficient to compress. Though disabled by default, enabling compression is a really quick way to reduce transit and speed up your website up to 80%!
-Here is the way to enable gzip compression to your nginx configuration:
-gzip on; gzip_disable msie6; gzip_vary on; gzip_proxied any; gzip_static on; gzip_buffers 16 8k; gzip_types text/plain text/css application/json application/x-javascript text/xml application/xml application/xml+rss text/javascript application/javascript image/svg+xml text/js; gzip_http_version 1.</description>
+Important: beware of the associated risk of enabling gzip compression if you are using SSL as noticed in the ngx_http_gzip_module page.</description>
     </item>
     
     <item>
@@ -6053,7 +5875,8 @@ But sometimes you want to modify the page in a deeper way.</description>
       
       <guid>https://devdocs.prestashop.com/1.7/themes/reference/overriding-modules/</guid>
       <description>Overriding modules When you write a theme, you often need to override the templates and assets coming from a module so that they match your theme&amp;rsquo;s specific markup needs. Themes can override modules&#39; assets (CSS and JavaScript only) by placing the corresponding file at a specific location.
-With PrestaShop 1.7, all module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory). Every PS 1.7 module developer should be aware of this change (introduced with PR 5020: https://github.</description>
+With PrestaShop 1.7, all module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory).
+This change was introduced with Pull Request #5020.</description>
     </item>
     
     <item>
@@ -6063,7 +5886,8 @@ With PrestaShop 1.7, all module overriding code goes to the modules directory (i
       
       <guid>https://devdocs.prestashop.com/8/themes/reference/overriding-modules/</guid>
       <description>Overriding modules When you write a theme, you often need to override the templates and assets coming from a module so that they match your theme&amp;rsquo;s specific markup needs. Themes can override modules&#39; assets (CSS and JavaScript only) by placing the corresponding file at a specific location.
-With PrestaShop 1.7, all module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory). Every PS 1.7 module developer should be aware of this change (introduced with PR 5020: https://github.</description>
+All module overriding code goes to the modules directory (in your module&amp;rsquo;s own directory).
+If your asset override is empty, PrestaShop will load nothing (neither the module one nor your override).</description>
     </item>
     
     <item>
@@ -6084,7 +5908,7 @@ That means that almost every selectors we use inside every JS files are inside t
       
       <guid>https://devdocs.prestashop.com/8/themes/reference/overriding-selectors/</guid>
       <description>Overriding selectors When you write a theme, you often need to change the markup, but if you do this, you&amp;rsquo;ll encounter some problems because core&amp;rsquo;s and classic&amp;rsquo;s javascript use some class in order to work.
-Two selectors maps are available since 1.7.8 one on the core side (/themes/_core/js/selectors.js) and another one inside the classic theme (/themes/classic/_dev/js/selectors.js).
+Two selectors maps are available, one on the core side (/themes/_core/js/selectors.js) and another one inside the classic theme (/themes/classic/_dev/js/selectors.js).
 That means that almost every selectors we use inside every JS files are inside these two files.</description>
     </item>
     
@@ -6105,9 +5929,32 @@ This feature is only useful if you want to slightly modify a theme (to add a blo
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/themes/reference/template-inheritance/parent-child-feature/</guid>
-      <description>Parent/child theme PrestaShop 1.7 relies a lot on template inheritance in order to create the most consistent theme possible while heavily reducing the amount of duplicated code.
-We took it even further introducing the Parent Child theme feature. The point to is to avoid modifying the main theme so you can update it!
+      <description>Parent/child theme PrestaShop relies a lot on template inheritance in order to create the most consistent theme possible, while heavily reducing the amount of duplicated code.
+We took it even further introducing the Parent Child theme feature. The point to is to avoid modifying the main theme, so you can update it!
 This feature is only useful if you want to slightly modify a theme (to add a block for example).</description>
+    </item>
+    
+    <item>
+      <title>prestashop:config</title>
+      <link>https://devdocs.prestashop.com/8/development/components/console/prestashop-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/console/prestashop-config/</guid>
+      <description>prestashop:config Description Manage shop configuration settings via command line
+Help $ bin/console prestashop:config --help Description: Manage your configuration via command line Usage: prestashop:config [options] [--] &amp;lt;action&amp;gt; &amp;lt;key&amp;gt; Arguments: action Action to execute (Allowed actions: get / set / remove). key Configuration key. like PS_LANG_DEFAULT Options: -l, --lang=LANG in this language. this can be either language id or ISO 3166-2 alpha-2 (en, fr, fi...) -g, --shopGroupId=SHOPGROUPID in this shop group (if no shop group or shop options are given defaults to allShops) -s, --shopId=SHOPID in this shop (if no shop group or shop options are given defaults to allShops) -h, --help Display this help message -q, --quiet Do not output any message -V, --version Display this application version --ansi Force ANSI output --no-ansi Disable ANSI output -n, --no-interaction Do not ask any interactive question -e, --env=ENV The Environment name.</description>
+    </item>
+    
+    <item>
+      <title>prestashop:debug</title>
+      <link>https://devdocs.prestashop.com/8/development/components/console/prestashop-debug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/8/development/components/console/prestashop-debug/</guid>
+      <description>prestashop:debug Informations  Path: src/PrestaShopBundle/Command/DebugCommand.php Arguments:  value: Value for debug mode, on/off, true/false, 1/0. If left out will just print the current state.    Description Get or set the debug mode from command line.
+With this command its easy to switch between debug mode on and off.
+To set debug mode on just run the command
+bin/console prestashop:debug on And to take it off
+bin/console prestashop:debug off To read out the debug status of the shop use</description>
     </item>
     
     <item>
@@ -6415,28 +6262,6 @@ The PrestaShop company gathers these rates and expose them through API endpoint 
     </item>
     
     <item>
-      <title>Processes</title>
-      <link>https://devdocs.prestashop.com/1.7/project/maintainers-guide/processes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/1.7/project/maintainers-guide/processes/</guid>
-      <description>Processes Security recommendations Maintainer GitHub accounts are granted extended rights on the PrestaShop organization.
-We require from maintainers to take the necessary steps to make sure this account is protected. This means, but not only:
- enable 2FA on GitHub use a safe and strong password be very careful about GitHub tokens granting account accesses  </description>
-    </item>
-    
-    <item>
-      <title>Processes</title>
-      <link>https://devdocs.prestashop.com/8/project/maintainers-guide/processes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://devdocs.prestashop.com/8/project/maintainers-guide/processes/</guid>
-      <description>Processes Security recommendations Maintainer GitHub accounts are granted extended rights on the PrestaShop organization.
-We require from maintainers to take the necessary steps to make sure this account is protected. This means, but not only:
- enable 2FA on GitHub use a safe and strong password be very careful about GitHub tokens granting account accesses  </description>
-    </item>
-    
-    <item>
       <title>Product customization fields</title>
       <link>https://devdocs.prestashop.com/1.7/webservice/resources/product_customization_fields/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6492,7 +6317,7 @@ A: By default, when a product is displayed in a list its cover image is used, it
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/faq/product/</guid>
-      <description>Product FAQ  Product cover  Product cover  Q: How can I override the cover image of my products?
+      <description>Product FAQ  Product cover  Product cover Q: How can I override the cover image of my products?
 A: By default, when a product is displayed in a list its cover image is used, it is configurable in the BackOffice and is set in product properties via the cover_image_id key. If you want to change this default behaviour you can use the actionGetProductPropertiesAfter in your module and change this key.</description>
     </item>
     
@@ -6574,7 +6399,7 @@ A: By default, when a product is displayed in a list its cover image is used, it
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/1.7/webservice/resources/product_suppliers/</guid>
-      <description>Resources for Product suppliers Product_supplier    Name Format Required Max size Description     id_product isUnsignedId ✔️  Product ID   id_product_attribute isUnsignedId ✔️  Product attribute ID   id_supplier isUnsignedId ✔️  Supplier ID   id_currency isUnsignedId ❌  Currency ID   product_supplier_reference isReference ❌ 64    product_supplier_price_te isPrice ❌      Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.w3.org/1999/xlink&amp;#34;&amp;gt; &amp;lt;product_supplier&amp;gt; &amp;lt;id&amp;gt;&amp;lt;!</description>
+      <description>Resources for Product suppliers Product_suppliers    Name Format Required Max size Description     id_product isUnsignedId ✔️  Product ID   id_product_attribute isUnsignedId ✔️  Product attribute ID   id_supplier isUnsignedId ✔️  Supplier ID   id_currency isUnsignedId ❌  Currency ID   product_supplier_reference isReference ❌ 64    product_supplier_price_te isPrice ❌      Blank schema &amp;lt;prestashop xmlns:xlink=&amp;#34;http://www.w3.org/1999/xlink&amp;#34;&amp;gt; &amp;lt;product_suppliers&amp;gt; &amp;lt;id&amp;gt;&amp;lt;!</description>
     </item>
     
     <item>
@@ -6889,7 +6714,7 @@ Type options    Option Type Default Description     multiple bool true Whether m
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/themes/reference/smarty-helpers/</guid>
-      <description>Helpers: functions and modifiers PrestaShop 1.7 provides several smarty helper functions and modifiers. See Smarty extensions for a full reference.</description>
+      <description>Helpers: functions and modifiers PrestaShop provides several smarty helper functions and modifiers. See Smarty extensions for a full reference.</description>
     </item>
     
     <item>
@@ -7269,7 +7094,7 @@ Controller/ └── Admin ├── Configure │ ├── AdvancedParameter
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/architecture/modern/controller-routing/</guid>
-      <description>Symfony controllers &amp;amp; routing Read the Symfony documentation on Controllers and Routing. Controllers are located in src/PrestaShopBundle/Controller/Admin folder. Starting on 1.7.3, controllers are being progressively organized in sub-folders following the Back Office menu. For instance, the TaxController is located in src/PrestaShop/Controller/Admin/Improve/International. Same applies to Improve, Sell sections etc.
+      <description>Symfony controllers &amp;amp; routing Read the Symfony documentation on Controllers and Routing. Controllers are located in src/PrestaShopBundle/Controller/Admin folder. They are organized in sub-folders following the Back Office menu. For instance, the TaxController is located in src/PrestaShop/Controller/Admin/Improve/International. Same applies to Improve, Sell sections etc.
 This is how the directory tree of controllers should look like:
 Controller/ └── Admin ├── Configure │ ├── AdvancedParameters │ └── ShopParameters ├── Improve │ ├── Design │ ├── International │ ├── Modules │ ├── Payment │ └── Shipping └── Sell ├── Catalog ├── Customers ├── CustomerService ├── Orders └── Stats Symfony Controllers should be thin by default and have only one responsibility: getting the HTTP Request from the client and returning an HTTP Response.</description>
     </item>
@@ -7472,7 +7297,7 @@ At the moment this proof of concept works only on the CategoryController but it 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/faceted-search/</guid>
-      <description>The Faceted Search Architecture This document describes the faceted search architecture that is being implemented in PrestaShop 1.7.
+      <description>The Faceted Search Architecture This document describes the faceted search architecture that is implemented in PrestaShop 1.7 and over.
 Please also read the extensive comments in classes/controller/ProductListingFrontControllerCore, as this document is only a high-level explanation.
 The target audience is anybody who wants to develop a well-integrated search module that replaces the way the PrestaShop core searches for products.
 At the moment this proof of concept works only on the CategoryController but it is easy to extend to the other product controllers (manufacturers, supplier&amp;hellip;).</description>
@@ -7516,8 +7341,22 @@ The following instructions only apply to PrestaShop 1.7.2 and later. In previous
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/themes/reference/theme-translation/</guid>
-      <description>How to translate your theme PrestaShop 1.7 comes with a new translation system for themes.
-The following instructions only apply to PrestaShop 1.7.2 and later. In previous versions, exported themes didn&amp;rsquo;t include the selected and included translations. 1. Add new or customize existing wordings in a theme Adding new wordings is easy when building your theme. You simply need to edit the .tpl file of your choice and add (or customize) a wording.</description>
+      <description>How to translate your theme PrestaShop provides a way to translate your theme to any language.
+1. Add new or customize existing wordings in a theme Adding new wordings is easy when building your theme. You simply need to edit the .tpl file of your choice and add (or customize) a wording. All wordings must always be written in english.
+For example:
+{l s=&amp;#39;Read more&amp;#39; d=&amp;#39;Shop.Yourthemename&amp;#39;}Change &amp;ldquo;Yourthemename&amp;rdquo; to your own theme&amp;rsquo;s name.</description>
+    </item>
+    
+    <item>
+      <title>Theme-specific modules</title>
+      <link>https://devdocs.prestashop.com/1.7/themes/reference/theme-specific-modules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://devdocs.prestashop.com/1.7/themes/reference/theme-specific-modules/</guid>
+      <description>Theme-specific modules When you write a theme, you may need to extend PrestaShop features. You can do that by adding modules that will be tied to your theme and shipped with it.
+Adding a module Theme-specific modules should be placed in your theme&amp;rsquo;s dependencies/modules directory:
+. └── dependencies │ └── modules │ └── mymodule ... Declaring the module You can declare the module in your theme&amp;rsquo;s theme.yml file:
+dependencies:modules:- mymoduleglobal_settings:modules:to_enable:- mymoduleThis will make PrestaShop:</description>
     </item>
     
     <item>
@@ -7538,7 +7377,7 @@ Keep in mind that the config is not completely replaced, it&amp;rsquo;s an Objec
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://devdocs.prestashop.com/8/development/components/tinymce/</guid>
-      <description>Modify the TinyMCE configuration  You are able to modify the configuration by using the actionAdminControllerSetMedia hook.
+      <description>Modify the TinyMCE configuration You are able to modify the configuration by using the actionAdminControllerSetMedia hook.
 Inside the JS file you added with this hook, you need to create a global object containing your custom configuration:
 window.defaultTinyMceConfig = { [...] } and as you can see in the tinymce core file it will load it instead of the default core configuration.
 Keep in mind that the config is not completely replaced, it&amp;rsquo;s an Object.</description>
