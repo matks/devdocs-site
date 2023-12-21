@@ -3,36 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="generator" content="Hugo 0.121.1">
     <meta name="description" content="Learn how to extend, modify and test PrestaShop, create modules, themes, and more.">
-<meta name="twitter:image" content="https://devdocs.prestashop.com/images/social-cover.jpg" />
+<meta name="twitter:image" content="https://devdocs.prestashop-project.org/images/social-cover.jpg" />
 <meta name="twitter:site" content="@prestashop" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Notification domain" />
 <meta name="twitter:description" content="Learn how to extend, modify and test PrestaShop, create modules, themes, and more.">
-<meta property="og:image" content="https://devdocs.prestashop.com/images/social-cover.jpg" />
+<meta property="og:image" content="https://devdocs.prestashop-project.org/images/social-cover.jpg" />
 <meta property="og:site_name" content="PrestaShop" />
 <meta property="og:title" content="Notification domain" />
 <meta property="og:description" content="Learn how to extend, modify and test PrestaShop, create modules, themes, and more.">
 <meta name="author" content="PrestaShop">
 <meta name="docsearch:version" content="1.7" />
 
-    <link rel="icon" href="/images/preston-logo@2x.png" type="image/png">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
 
     <title>Notification domain :: PrestaShop Developer Documentation</title>
-
+    <link rel="canonical" href="https://devdocs.prestashop-project.org/8/development/architecture/domain/references/notification/">
     
+    <link href="/css/font-awesome.min.css?1703178482" rel="stylesheet">
+    <link href="/css/syntax-github.css?1703178482" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1703178482" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1703178482" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3.2.1" />
+    <link href="/style.css?1703178482" rel="stylesheet">
 
-    
-    <link href="/css/font-awesome.min.css?1643106041" rel="stylesheet">
-    <link href="/css/syntax-github.css?1643106041" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1643106041" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1643106041" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
-    <link href="/style.css?1643106041" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap" rel="stylesheet">
-
-    <script src="/js/jquery-3.3.1.min.js?1643106041"></script>
+    <script src="/js/jquery-3.3.1.min.js?1703178482"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -54,8 +51,7 @@
 
   <div id="header-wrapper">
     <div id="header">
-      <a id="logo" href="/">PrestaShop DevDocs</a>
-
+      <a id="logo" href="/"><img src="/images/logo@2x.png" width="200" alt="PrestaShop" /></a>
     </div>
     
   
@@ -70,6 +66,13 @@
     
   
     
+    
+
+    
+    
+
+    
+    
     <div class="version-selector-container">
       <div class="version-selector" aria-label="Documentation version">
         <div class="version-selector-current">
@@ -83,11 +86,109 @@
           </svg>
         </div>
         <ul class="version-selector-dropdown">
-          <li><a href="/1.7/">
-              PrestaShop 1.7
-              <span class="version-selector-meta">Current</span></a></li><li><a href="/8/">
-              PrestaShop 8
-              <span class="version-selector-meta">Dev</span></a></li>
+          <li>
+              
+              
+                
+                
+            
+                
+                  
+                    
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                <a href="/1.7/development/architecture/domain/references/notification/">
+              
+                PrestaShop 1.7
+                <span class="version-selector-meta">Previous</span></a>
+            </li><li>
+              
+              
+                
+                
+            
+                
+                  
+                    
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                
+                
+            
+                
+                    
+                
+              
+                <a href="/8/development/architecture/domain/references/notification/">
+              
+                PrestaShop 8
+                <span class="version-selector-meta">Current</span></a>
+            </li>
         </ul>
       </div>
     </div>
@@ -227,6 +328,27 @@
       <li data-nav-id="/1.7/basics/installation/localhost/" title="Installing a local environment" class="dd-item ">
         <a href="/1.7/basics/installation/localhost/">
         Development environment
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/basics/installation/install-from-cli/" title="Installing PrestaShop from CLI" class="dd-item ">
+        <a href="/1.7/basics/installation/install-from-cli/">
+        Installation from CLI
         
         </a>
     </li>
@@ -3006,6 +3128,71 @@
  
   
     
+    
+    <li data-nav-id="/1.7/development/components/faceted-search/" title="Faceted search" class="dd-item
+        
+        
+        
+        isParent
+        ">
+      <a href="/1.7/development/components/faceted-search/">
+          <span>
+            Faceted search
+          </span>
+
+          
+
+          
+            <i class="fa fa-angle-down"></i>
+          
+      </a>
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/faceted-search/inside-faceted-search-module/" title="Inside the module" class="dd-item ">
+        <a href="/1.7/development/components/faceted-search/inside-faceted-search-module/">
+        Inside the module
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
       <li data-nav-id="/1.7/development/components/global-components/" title="Global JavaScript components" class="dd-item ">
         <a href="/1.7/development/components/global-components/">
         Global JavaScript components
@@ -3532,27 +3719,6 @@
         </ul>
       
     </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-      <li data-nav-id="/1.7/development/components/faceted-search/" title="The Faceted Search component" class="dd-item ">
-        <a href="/1.7/development/components/faceted-search/">
-        Faceted Search
-        
-        </a>
-    </li>
-     
   
  
 
@@ -4238,6 +4404,27 @@
       <li data-nav-id="/1.7/development/components/grid/columns-reference/badge/" title="BadgeColumn reference" class="dd-item ">
         <a href="/1.7/development/components/grid/columns-reference/badge/">
         BadgeColumn
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/1.7/development/components/grid/columns-reference/color/" title="ColorColumn reference" class="dd-item ">
+        <a href="/1.7/development/components/grid/columns-reference/color/">
+        ColorColumn
         
         </a>
     </li>
@@ -7315,6 +7502,38 @@
         </a>
     </li>
      
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    
+    <li data-nav-id="/1.7/modules/concepts/webservice/" title="Webservice" class="dd-item
+        
+        
+        
+        
+        ">
+      <a href="/1.7/modules/concepts/webservice/">
+          <span>
+            Webservice
+          </span>
+
+          
+
+          
+      </a>
+      
+    </li>
   
  
 
@@ -12169,6 +12388,27 @@
  
   
     
+      <li data-nav-id="/1.7/faq/modules/" title="Modules FAQ" class="dd-item ">
+        <a href="/1.7/faq/modules/">
+        Modules FAQ
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
       <li data-nav-id="/1.7/faq/open-source-project/" title="Open Source Project FAQ" class="dd-item ">
         <a href="/1.7/faq/open-source-project/">
         Open Source Project FAQ
@@ -12333,7 +12573,7 @@
           <i class="fa fa-pencil"></i>
           <span id="top-github-link-text">Improve this page</span>
         </a>
-        <a class="how-to-improve" href="/1.7/contribute/documentation/how/">
+        <a class="how-to-improve" href="/8/contribute/documentation/how">
           <i class="fa fa-question-circle"></i>
           <span>How</span>
         </a>
@@ -12404,6 +12644,8 @@
             <div id="toc">
   <div class="wrapper">
     <div id="toc-title">Table of Contents</div>
+    
+    
     <nav id="TableOfContents">
   <ul>
     <li>
@@ -12582,180 +12824,6 @@
     
   
       
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-    
-  
-      
-    
-  
-      
-        
-    
-    
-      
-        
-        
-      
-      
-      
-      
-        
-      
-      
-
-      
-        
-    
-    
-      
-        
-          
-          
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-        
-      
-      
-      
-      
-        
-      
-      
-
-      
-        
-    
-    
-      
-        
-          
-          
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
         
     
     
@@ -12801,21 +12869,6 @@
     
   
       
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
         
     
     
@@ -12830,200 +12883,6 @@
       
     
   
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-        
-      
-      
-
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
       
         
     
@@ -13114,6 +12973,263 @@
     
       
         
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+          
+          
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
       
       
       
@@ -13159,10 +13275,60 @@
     
       
         
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
         
       
       
       
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+        
+      
+      
+      
+      
+        
       
       
 
@@ -13250,20 +13416,6 @@
     
       
         
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
         
       
       
@@ -13271,280 +13423,6 @@
       
       
 
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
-      
-        
-    
-    
-      
-        
-        
-      
-      
-      
-      
-      
-
-      
-    
-  
       
         
     
@@ -13804,12 +13682,6 @@
     
   
       
-    
-  
-      
-    
-  
-      
         
     
     
@@ -13821,9 +13693,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -13839,6 +13708,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -13855,9 +13727,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -13878,14 +13747,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -13896,30 +13766,33 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
     
       
         
+        
       
       
       
@@ -13935,14 +13808,18 @@
     
       
         
-      
+          
+          
+        
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -13955,29 +13832,24 @@
       
       
 
-      
-    
-  
       
     
   
       
-    
-  
-      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -13991,6 +13863,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -14006,14 +13881,17 @@
     
   
       
+        
     
-  
-      
     
-  
       
-    
-  
+        
+      
+      
+      
+      
+      
+
       
     
   
@@ -14027,10 +13905,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -14058,6 +13937,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -14074,9 +13956,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -14103,6 +13982,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -14145,9 +14027,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -14178,6 +14057,15 @@
       
       
 
+      
+    
+  
+      
+    
+  
+      
+    
+  
       
         
     
@@ -14190,6 +14078,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -14205,9 +14096,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -14251,20 +14139,21 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
     
       
         
+      
       
       
       
+        
       
       
 
@@ -14274,15 +14163,14 @@
     
       
         
+      
       
       
       
+        
       
       
 
-      
-    
-  
       
         
     
@@ -14308,11 +14196,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -14325,24 +14212,29 @@
       
       
 
+      
+    
+  
       
     
   
       
+    
+  
+      
         
     
     
       
         
+      
       
       
       
+        
       
       
 
-      
-    
-  
       
         
     
@@ -14356,9 +14248,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -14370,24 +14259,35 @@
       
       
 
+      
+    
+  
+      
+    
+  
+      
+    
+  
       
     
   
       
+    
+  
+      
         
     
     
       
         
+      
       
       
       
+        
       
       
 
-      
-    
-  
       
         
     
@@ -14416,9 +14316,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -14430,6 +14327,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -14460,9 +14360,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -14490,9 +14387,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -14512,16 +14406,17 @@
     
   
       
+    
+  
+      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
@@ -14537,7 +14432,13 @@
       
       
 
+      
+    
+  
       
+    
+  
+      
         
     
     
@@ -14564,9 +14465,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -14609,6 +14507,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -14654,9 +14555,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -14838,9 +14736,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -14852,6 +14747,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -14879,9 +14777,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -15094,7 +14989,19 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
       
+      
+      
+      
+
+      
     
   
       
@@ -15148,14 +15055,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -15198,6 +15106,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -15240,6 +15151,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -15256,11 +15170,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -15273,9 +15186,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -15337,9 +15247,18 @@
     
   
       
+        
     
-  
+    
+      
+        
+      
+      
+      
       
+      
+
+      
     
   
       
@@ -15354,6 +15273,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -15381,9 +15303,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -15471,14 +15390,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -15491,6 +15411,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -15516,11 +15439,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -15567,8 +15489,17 @@
     
   
       
+        
     
-  
+    
+      
+        
+      
+      
+      
+      
+      
+
       
         
     
@@ -15675,6 +15606,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -15686,6 +15620,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
     
   
@@ -15701,9 +15641,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -15747,10 +15684,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -15808,9 +15746,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -15844,9 +15779,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -15918,6 +15850,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -15933,6 +15871,18 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
       
     
   
@@ -15945,14 +15895,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -15977,12 +15928,13 @@
       
       
       
-      
-        
       
       
 
       
+    
+  
+      
         
     
     
@@ -16009,9 +15961,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -16069,6 +16018,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -16079,11 +16034,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -16111,9 +16065,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -16151,6 +16102,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -16176,6 +16130,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -16206,7 +16163,19 @@
       
     
   
+      
+        
+    
+    
+      
+        
       
+      
+      
+      
+      
+
+      
     
   
       
@@ -16233,8 +16202,6 @@
       
       
       
-      
-        
       
       
 
@@ -16254,6 +16221,12 @@
     
   
       
+    
+  
+      
+    
+  
+      
         
     
     
@@ -16262,6 +16235,8 @@
       
       
       
+      
+        
       
       
 
@@ -16290,11 +16265,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -16307,9 +16281,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -16329,9 +16300,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -16343,6 +16311,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -16355,9 +16326,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -16367,14 +16335,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -16399,9 +16368,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -16450,6 +16416,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -16478,11 +16447,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -16495,9 +16463,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -16528,18 +16493,6 @@
       
     
   
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
       
     
   
@@ -16568,6 +16521,8 @@
       
       
       
+        
+      
       
 
       
@@ -16597,9 +16552,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -16642,25 +16594,10 @@
       
       
 
-      
-    
-  
       
     
   
-      
-        
-    
-    
-      
-        
-      
-      
       
-      
-      
-
-      
     
   
       
@@ -16694,9 +16631,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -16708,6 +16642,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -16720,6 +16657,8 @@
       
       
       
+      
+        
       
       
 
@@ -16736,9 +16675,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -16750,6 +16686,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -16810,6 +16749,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -16885,9 +16827,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -16904,6 +16843,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -16915,9 +16857,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -16945,9 +16884,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -16957,14 +16893,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -16992,6 +16929,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -17052,12 +16995,6 @@
       
       
 
-      
-    
-  
-      
-    
-  
       
     
   
@@ -17070,22 +17007,21 @@
       
       
       
-      
-        
       
       
 
       
+    
+  
+      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
@@ -17146,6 +17082,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17162,9 +17101,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -17176,6 +17112,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -17188,12 +17127,6 @@
       
       
 
-      
-    
-  
-      
-    
-  
       
     
   
@@ -17207,10 +17140,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -17253,6 +17187,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17269,9 +17206,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -17313,6 +17247,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17325,6 +17262,8 @@
       
       
       
+      
+        
       
       
 
@@ -17344,9 +17283,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -17400,6 +17336,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17415,6 +17354,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17431,29 +17373,24 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
     
       
         
-      
       
       
       
       
-
+        
       
-    
-  
       
-    
-  
+
       
         
     
@@ -17466,6 +17403,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -17497,12 +17437,6 @@
     
   
       
-    
-  
-      
-    
-  
-      
         
     
     
@@ -17511,12 +17445,13 @@
       
       
       
-      
-        
       
       
 
       
+    
+  
+      
         
     
     
@@ -17537,11 +17472,9 @@
     
       
         
-      
       
       
       
-        
       
       
 
@@ -17557,24 +17490,29 @@
       
       
 
+      
+    
+  
       
     
   
       
+    
+  
+      
         
     
     
       
         
+      
       
       
       
+        
       
       
 
-      
-    
-  
       
         
     
@@ -17588,6 +17526,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -17674,9 +17615,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -17704,6 +17642,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17719,9 +17660,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -17786,9 +17724,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -17815,6 +17750,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -17861,17 +17799,8 @@
     
   
       
-        
-    
     
-      
-        
-      
-      
-      
-      
-      
-
+  
       
     
   
@@ -17885,11 +17814,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -17915,11 +17843,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -17962,9 +17889,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -18052,6 +17976,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -18067,9 +17994,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -18161,6 +18085,12 @@
     
   
       
+    
+  
+      
+    
+  
+      
         
     
     
@@ -18202,9 +18132,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -18862,29 +18789,24 @@
       
       
 
-      
-    
-  
       
     
   
       
-    
-  
-      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -18913,6 +18835,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -18984,9 +18909,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -19002,6 +18924,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -19044,9 +18969,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -19060,10 +18982,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -19091,6 +19014,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -19152,9 +19078,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -19166,6 +19089,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -19257,11 +19183,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -19274,6 +19199,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -19286,9 +19214,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -19301,29 +19226,24 @@
       
       
 
-      
-    
-  
       
     
   
       
-    
-  
-      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -19337,6 +19257,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -19408,9 +19331,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -19500,9 +19420,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -19518,9 +19435,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -19534,10 +19448,14 @@
       
       
       
-        
-      
       
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -19566,9 +19484,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -19625,6 +19540,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
     
   
@@ -19655,9 +19576,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -19718,8 +19636,6 @@
       
       
       
-        
-      
       
 
       
@@ -19750,17 +19666,8 @@
       
 
       
-        
-    
     
-      
-        
-      
-      
-      
-      
-      
-
+  
       
     
   
@@ -19776,9 +19683,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -19810,6 +19714,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -19833,9 +19740,11 @@
     
       
         
+      
       
       
       
+        
       
       
 
@@ -19851,9 +19760,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -19900,6 +19806,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -19911,6 +19820,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -19920,32 +19832,23 @@
     
       
         
-      
-      
       
       
       
-
       
-    
-  
+        
       
-    
-  
       
-    
-  
+
       
         
     
     
       
         
-      
       
       
       
-        
       
       
 
@@ -19961,6 +19864,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -19988,12 +19894,13 @@
       
       
       
-      
-        
       
       
 
       
+    
+  
+      
         
     
     
@@ -20020,6 +19927,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -20032,9 +19942,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -20050,6 +19957,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -20066,9 +19976,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -20080,6 +19987,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -20092,6 +20002,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -20122,11 +20035,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -20148,9 +20060,11 @@
     
       
         
+      
       
       
       
+        
       
       
 
@@ -20196,9 +20110,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -20244,9 +20155,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -20277,18 +20185,6 @@
       
     
   
-      
-        
-    
-    
-      
-        
-      
-      
-      
-      
-      
-
       
         
     
@@ -20331,11 +20227,9 @@
     
       
         
-      
       
       
       
-        
       
       
 
@@ -20351,6 +20245,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -20364,11 +20261,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -20426,6 +20322,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -20438,9 +20337,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -20498,6 +20394,15 @@
       
       
 
+      
+    
+  
+      
+    
+  
+      
+    
+  
       
     
   
@@ -20511,11 +20416,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -20552,15 +20456,14 @@
     
       
         
+      
       
       
       
+        
       
       
 
-      
-    
-  
       
         
     
@@ -20589,9 +20492,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -20603,6 +20503,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -20618,9 +20521,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -20633,6 +20533,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -20649,9 +20552,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -20663,6 +20563,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -20676,11 +20579,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -20723,9 +20625,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -20768,6 +20667,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -20858,9 +20760,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -20888,6 +20787,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
     
   
@@ -20901,11 +20806,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -20993,9 +20897,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -21053,12 +20954,6 @@
       
       
 
-      
-    
-  
-      
-    
-  
       
     
   
@@ -21078,9 +20973,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -21092,6 +20984,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -21104,9 +20999,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -21131,14 +21023,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -21148,25 +21041,27 @@
       
       
       
-      
-        
       
       
 
       
+    
+  
+      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -21192,10 +21087,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -21208,29 +21104,24 @@
       
       
 
-      
-    
-  
       
     
   
       
-    
-  
-      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -21243,15 +21134,6 @@
       
       
 
-      
-    
-  
-      
-    
-  
-      
-    
-  
       
     
   
@@ -21261,14 +21143,15 @@
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -21296,6 +21179,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -21308,9 +21194,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -21342,6 +21225,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -21383,9 +21269,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -21416,6 +21299,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -21458,9 +21344,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -21507,6 +21390,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -21758,6 +21644,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -21776,6 +21665,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -21785,11 +21677,9 @@
     
       
         
-      
       
       
       
-        
       
       
 
@@ -21805,6 +21695,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -21817,9 +21713,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -21851,6 +21744,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -21871,15 +21767,14 @@
     
       
         
+      
       
       
       
+        
       
       
 
-      
-    
-  
       
         
     
@@ -21890,11 +21785,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -21905,11 +21799,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -21935,11 +21828,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -21952,6 +21844,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
     
   
@@ -21965,11 +21863,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -21986,17 +21883,11 @@
     
   
       
-        
-    
     
-      
-        
-      
-      
-      
-      
+  
       
-
+    
+  
       
     
   
@@ -22012,9 +21903,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -22027,6 +21915,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -22040,11 +21931,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -22060,6 +21950,18 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
       
         
     
@@ -22076,6 +21978,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -22106,9 +22011,18 @@
     
   
       
+        
     
-  
+    
+      
+        
       
+      
+      
+      
+      
+
+      
         
     
     
@@ -22120,6 +22034,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -22150,7 +22067,19 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
       
+      
+      
+      
+
+      
     
   
       
@@ -22162,14 +22091,30 @@
     
       
         
+      
+      
+      
       
       
+
       
+        
+    
+    
       
         
       
       
+      
+      
+      
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -22194,6 +22139,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -22207,12 +22155,23 @@
       
       
       
+        
+      
       
 
       
+        
     
-  
+    
+      
+        
+      
       
+      
+      
+      
+
+      
         
     
     
@@ -22359,9 +22318,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -22420,10 +22376,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -22481,6 +22438,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -22497,9 +22457,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -22590,9 +22547,18 @@
     
   
       
+        
     
-  
+    
+      
+        
       
+      
+      
+      
+      
+
+      
     
   
       
@@ -22607,6 +22573,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -22664,9 +22633,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -22746,22 +22712,20 @@
     
   
       
-    
-  
-      
         
     
     
       
         
-      
       
       
       
-        
       
       
 
+      
+    
+  
       
         
     
@@ -22775,6 +22739,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -22846,9 +22813,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -22882,7 +22846,19 @@
       
     
   
+      
+        
+    
+    
+      
+        
       
+      
+      
+      
+      
+
+      
     
   
       
@@ -22957,6 +22933,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -22984,11 +22963,26 @@
       
       
 
+      
+    
+  
       
     
   
+      
+        
+    
+    
       
         
+      
+      
+      
+      
+      
+
+      
+        
     
     
       
@@ -23021,16 +23015,32 @@
     
   
       
+    
+  
+      
         
     
     
       
         
+      
       
+      
+      
+      
+
       
+    
+  
       
+        
+    
+    
       
         
+      
+      
+      
       
       
 
@@ -23080,6 +23090,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -23095,9 +23108,18 @@
     
   
       
+        
     
-  
+    
+      
+        
       
+      
+      
+      
+      
+
+      
     
   
       
@@ -23109,8 +23131,6 @@
       
       
       
-      
-        
       
       
 
@@ -23202,6 +23222,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -23217,9 +23240,18 @@
     
   
       
+        
     
-  
+    
+      
+        
       
+      
+      
+      
+      
+
+      
     
   
       
@@ -23228,14 +23260,30 @@
     
       
         
+      
+      
       
       
       
+
+      
+    
+  
+      
+        
+    
+    
       
         
       
       
+      
+      
+      
 
+      
+    
+  
       
         
     
@@ -23257,14 +23305,30 @@
     
       
         
+      
+      
       
       
       
+
+      
+    
+  
+      
+        
+    
+    
       
         
       
       
+      
+      
+      
 
+      
+    
+  
       
         
     
@@ -23322,6 +23386,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23331,16 +23398,27 @@
     
       
         
+      
       
       
       
+        
       
       
 
       
+        
     
-  
+    
+      
+        
       
+      
+      
+      
+      
+
+      
         
     
     
@@ -23352,6 +23430,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -23397,6 +23478,3200 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+        
+    
+    
+  
+      
+    
+  
+      
+    
+  
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
       
     
   
@@ -23410,11 +26685,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -23427,9 +26701,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -23443,8 +26714,6 @@
       
       
       
-        
-      
       
 
       
@@ -23459,6 +26728,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -23504,6 +26776,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23517,8 +26792,6 @@
       
       
       
-        
-      
       
 
       
@@ -23533,6 +26806,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23542,9 +26818,11 @@
     
       
         
+      
       
       
       
+        
       
       
 
@@ -23560,9 +26838,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -23575,6 +26850,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23590,9 +26868,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -23654,10 +26929,11 @@
       
       
       
-        
-      
       
 
+      
+    
+  
       
         
     
@@ -23670,6 +26946,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -23686,9 +26965,6 @@
     
   
       
-    
-  
-      
         
     
     
@@ -23715,9 +26991,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -23733,6 +27006,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -23745,9 +27021,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -23764,9 +27037,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -23838,6 +27108,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23853,6 +27126,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -23865,6 +27141,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23911,9 +27190,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -23925,9 +27201,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -23958,9 +27231,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -23976,6 +27246,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -23992,9 +27265,6 @@
       
 
       
-    
-  
-      
         
     
     
@@ -24006,6 +27276,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -24033,6 +27306,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -24046,11 +27322,10 @@
       
       
       
+        
       
-
       
-    
-  
+
       
         
     
@@ -24063,9 +27338,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -24123,6 +27395,9 @@
       
       
 
+      
+    
+  
       
     
   
@@ -24157,6 +27432,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -24174,6 +27452,20 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+        
+      
+      
+
       
         
     
@@ -24215,6 +27507,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -24261,9 +27556,18 @@
     
   
       
+        
     
-  
+    
+      
+        
+      
+      
+      
       
+      
+
+      
         
     
     
@@ -24304,14 +27608,27 @@
     
       
         
+      
       
       
       
       
+
+      
+        
+    
+    
+      
         
+      
+      
       
       
+      
 
+      
+    
+  
       
         
     
@@ -24400,6 +27717,9 @@
       
 
       
+    
+  
+      
         
     
     
@@ -24569,7 +27889,19 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
       
+      
+
+      
         
     
     
@@ -24581,6 +27913,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -24743,16 +28078,31 @@
         
     
     
+      
+        
       
+      
+      
+      
         
       
       
+
       
+        
+    
+    
       
         
+      
       
       
+      
+      
 
+      
+    
+  
       
         
     
@@ -24888,6 +28238,18 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
       
         
     
@@ -24900,6 +28262,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -24976,6 +28341,9 @@
     
   
       
+    
+  
+      
         
     
     
@@ -24993,7 +28361,19 @@
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
       
+      
+
+      
     
   
       
@@ -26105,9 +29485,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -26120,6 +29497,9 @@
       
       
 
+      
+    
+  
       
         
     
@@ -26356,9 +29736,6 @@
       
       
 
-      
-    
-  
       
     
   
@@ -26374,6 +29751,12 @@
       
       
 
+      
+    
+  
+      
+    
+  
       
         
     
@@ -26386,9 +29769,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -26446,16 +29826,10 @@
       
       
 
-      
-    
-  
       
     
   
       
-    
-  
-      
         
     
     
@@ -26471,17 +29845,11 @@
     
   
       
-        
     
-    
-      
-        
-      
-      
-      
-      
+  
       
-
+    
+  
       
         
     
@@ -26494,9 +29862,6 @@
       
       
 
-      
-    
-  
       
         
     
@@ -26616,9 +29981,24 @@
       
       
 
+      
+    
+  
       
     
   
+      
+        
+    
+    
+      
+        
+      
+      
+      
+      
+      
+
       
     
   
@@ -26927,13 +30307,29 @@
 
 
 
+        <div class="notices info">
+            <p>
+                <strong>Warning:</strong> You are browsing the documentation for PrestaShop 1.7, which is outdated. 
+            </p>
+            <p>
+                    You might want to read an updated version of this page for the current version, PrestaShop 8.
+                    <a href="/8/development/architecture/domain/references/notification/" class="cta cta-banner cta-primary">
+                        Read the updated version of this page
+                    </a>
+            </p>
+            <p>
+                <a href="/8/basics/keeping-up-to-date/upgrade" class="cta cta-banner cta-secondary">
+                    Learn how to upgrade to the latest version.
+                </a>
+            </p>
+        </div>
 
 
 
-<h2 id="notification-domain">Notification domain</h2>
-<h3 id="notification-commands">Notification Commands</h3>
-<h4 id="UpdateEmployeeNotificationLastElementCommand">UpdateEmployeeNotificationLastElementCommand</h4>
-<p><code>PrestaShop\PrestaShop\Core\Domain\Notification\Command\UpdateEmployeeNotificationLastElementCommand</code>
+
+<h2 id="notification-domain">Notification domain<a href="#notification-domain"></a></h2>
+<h3 id="notification-commands">Notification Commands<a href="#notification-commands"></a></h3>
+<h4 id="UpdateEmployeeNotificationLastElementCommand">UpdateEmployeeNotificationLastElementCommand<a href="#UpdateEmployeeNotificationLastElementCommand"></a></h4><p><code>PrestaShop\PrestaShop\Core\Domain\Notification\Command\UpdateEmployeeNotificationLastElementCommand</code>
 <em>Updates the last notification element from a given type seen by the employee</em></p>
 <table>
 <thead>
@@ -26957,9 +30353,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="notification-queries">Notification Queries</h3>
-<h4 id="GetNotificationLastElements">GetNotificationLastElements</h4>
-<p><code>PrestaShop\PrestaShop\Core\Domain\Notification\Query\GetNotificationLastElements</code>
+
+<h3 id="notification-queries">Notification Queries<a href="#notification-queries"></a></h3>
+<h4 id="GetNotificationLastElements">GetNotificationLastElements<a href="#GetNotificationLastElements"></a></h4><p><code>PrestaShop\PrestaShop\Core\Domain\Notification\Query\GetNotificationLastElements</code>
 <em>This Query return the last Notifications elements</em></p>
 <table>
 <thead>
@@ -26987,10 +30383,62 @@
 
 <footer class="article-footer">
 	
+    <h5 class="footerHeading">Help and support</h5>
+    <div class="improvedFooter">
 
-	<div class="license">
-		This article is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-	</div>
+        <div class="contribute">
+            <h6>Help make these docs great!</h6>
+
+            <p>
+                The PrestaShop Developer Documentation is open source. <br>See something wrong or unclear? Submit a pull request.
+            </p>
+
+            <a class="github-link"
+                title='Improve this page'
+                href="https://github.com/PrestaShop/docs/edit/1.7.x/development/architecture/domain/references/notification/index.md"
+                target="blank"
+            >
+                <i class="fa fa-github"></i>
+                <span id="top-github-link-text">
+                    Improve this page
+                </span>
+            </a>
+
+            <br>
+
+            <a class="how-to-improve" href="/8/contribute/documentation/how">
+                <span>
+                    Learn how to contribute
+                </span>
+            </a>
+        </div>
+
+        <div class="support">
+            <h6>Still need help?</h6>
+
+            <a href="https://www.prestashop-project.org/slack/">
+                <i class="fa fa-slack"></i> Join the PrestaShop Project’s Slack Chat
+            </a>
+            <a href="https://github.com/PrestaShop/PrestaShop/discussions">
+                <i class="fa fa-github"></i> Join us on Github Discussions
+            </a>
+            <a href="https://www.prestashop-project.org/support/">
+                <i class="fa fa-question-circle"></i> Find support on prestashop-project.org
+            </a>
+            <a href="https://build.prestashop-project.org/">
+                <i class="fa fa-newspaper-o"></i> Discover our developer's blog
+            </a>
+        </div>
+    </div>
+    <div class="licenceFooter">
+        
+    
+
+
+        This article is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </div>
+
+
 </footer>
 
         
@@ -27004,53 +30452,2093 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1643106041"></script>
-    <script src="/js/perfect-scrollbar.min.js?1643106041"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1643106041"></script>
-    <script src="/js/jquery.sticky.js?1643106041"></script>
-    <script src="/js/featherlight.min.js?1643106041"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1643106041"></script>
-    <script src="/js/modernizr.custom-3.6.0.js?1643106041"></script>
-    <script src="/js/learn.js?1643106041"></script>
-    <script src="/js/hugo-learn.js?1643106041"></script>
+    <script src="/js/clipboard.min.js?1703178482"></script>
+    <script src="/js/perfect-scrollbar.min.js?1703178482"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1703178482"></script>
+    <script src="/js/jquery.sticky.js?1703178482"></script>
+    <script src="/js/featherlight.min.js?1703178482"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1703178482"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1703178482"></script>
+    <script src="/js/learn.js?1703178482"></script>
+    <script src="/js/hugo-learn.js?1703178482"></script>
     
-    <script src="/main.js?1643106041"></script>
+    <script src="/main.js?1703178482"></script>
     
     
     
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
-  <script type="text/javascript">
-    docsearch({
-      appId: '',
-      apiKey: 'e5a3a32dad46a5aaaa771b2b37d7084a',
-      indexName: 'prestashop',
-      placeholder: 'Search DevDocs',
-      searchParameters: {
-        facetFilters: [
-          'version:1.7'
-        ],
-      },
-      container: '#docsearch-container',
-    });
-  </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3.2.1"></script>
+    <script type="text/javascript">
+
+        const hookReferential = [
+            
+                
+                    {
+                        name: "action\u003cClassName\u003e\u003cAction\u003eAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionclassnameactionafter/"
+                    },
+                
+                    {
+                        name: "action\u003cClassName\u003e\u003cAction\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionclassnameactionbefore/"
+                    },
+                
+                    {
+                        name: "action\u003cController\u003eFormModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncontrollerformmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cController\u003eListingFieldsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncontrollerlistingfieldsmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cController\u003eListingResultsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncontrollerlistingresultsmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cController\u003eOptionsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncontrolleroptionsmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cDefinitionId\u003eGridDataModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondefinitionidgriddatamodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cDefinitionId\u003eGridDefinitionModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondefinitionidgriddefinitionmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cDefinitionId\u003eGridFilterFormModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondefinitionidgridfilterformmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cDefinitionId\u003eGridPresenterModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondefinitionidgridpresentermodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cDefinitionId\u003eGridQueryBuilderModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondefinitionidgridquerybuildermodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cFormName\u003eFormBuilderModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionformnameformbuildermodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cFormName\u003eFormDataProviderData",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionformnameformdataproviderdata/"
+                    },
+                
+                    {
+                        name: "action\u003cFormName\u003eFormDataProviderDefaultData",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionformnameformdataproviderdefaultdata/"
+                    },
+                
+                    {
+                        name: "action\u003cLegacyControllerName\u003eListingFieldsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionlegacycontrollernamelistingfieldsmodifier/"
+                    },
+                
+                    {
+                        name: "action\u003cLegacyControllerName\u003eListingResultsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionlegacycontrollernamelistingresultsmodifier/"
+                    },
+                
+                    {
+                        name: "actionAdmin\u003cAction\u003eAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminactionafter/"
+                    },
+                
+                    {
+                        name: "actionAdmin\u003cAction\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminactionbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminActivateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminactivateafter/"
+                    },
+                
+                    {
+                        name: "actionAdminActivateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminactivatebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminAdministrationControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminadministrationcontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminAdministrationControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminadministrationcontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminAdminShopParametersMetaControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminadminshopparametersmetacontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminAdminWebserviceControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminadminwebservicecontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminAdvancedParametersPerformanceControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminadvancedparametersperformancecontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminAdvancedParametersPerformanceControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminadvancedparametersperformancecontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminControllerInitAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmincontrollerinitafter/"
+                    },
+                
+                    {
+                        name: "actionAdminControllerInitBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmincontrollerinitbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminControllerSetMedia",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmincontrollersetmedia/"
+                    },
+                
+                    {
+                        name: "actionAdminDeactivateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmindeactivateafter/"
+                    },
+                
+                    {
+                        name: "actionAdminDeactivateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmindeactivatebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminDeleteAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmindeleteafter/"
+                    },
+                
+                    {
+                        name: "actionAdminDeleteBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmindeletebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminDuplicateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminduplicateafter/"
+                    },
+                
+                    {
+                        name: "actionAdminDuplicateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminduplicatebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminInternationalGeolocationControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmininternationalgeolocationcontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminInternationalGeolocationControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmininternationalgeolocationcontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminInternationalLocalizationControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmininternationallocalizationcontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminInternationalLocalizationControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadmininternationallocalizationcontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerForgotAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerforgotafter/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerForgotBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerforgotbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerLoginAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerloginafter/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerLoginBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerloginbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerResetAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerresetafter/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerResetBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollerresetbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminLoginControllerSetMedia",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogincontrollersetmedia/"
+                    },
+                
+                    {
+                        name: "actionAdminLogsControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminlogscontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminMaintenanceControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminmaintenancecontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminMetaAfterWriteRobotsFile",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminmetaafterwriterobotsfile/"
+                    },
+                
+                    {
+                        name: "actionAdminMetaBeforeWriteRobotsFile",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminmetabeforewriterobotsfile/"
+                    },
+                
+                    {
+                        name: "actionAdminMetaSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminmetasave/"
+                    },
+                
+                    {
+                        name: "actionAdminOrdersTrackingNumberUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminorderstrackingnumberupdate/"
+                    },
+                
+                    {
+                        name: "actionAdminPreferencesControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminpreferencescontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerActivateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrolleractivateafter/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerActivateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrolleractivatebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerDeactivateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollerdeactivateafter/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerDeactivateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollerdeactivatebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerDeleteAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollerdeleteafter/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerDeleteBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollerdeletebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerDuplicateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollerduplicateafter/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerDuplicateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollerduplicatebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerSortAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollersortafter/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsControllerSortBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductscontrollersortbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsListingFieldsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductslistingfieldsmodifier/"
+                    },
+                
+                    {
+                        name: "actionAdminProductsListingResultsModifier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminproductslistingresultsmodifier/"
+                    },
+                
+                    {
+                        name: "actionAdminSecurityControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminsecuritycontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShippingPreferencesControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshippingpreferencescontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShippingPreferencesControllerPostProcessCarrierOptionsBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshippingpreferencescontrollerpostprocesscarrieroptionsbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShippingPreferencesControllerPostProcessHandlingBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshippingpreferencescontrollerpostprocesshandlingbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShopParametersMetaControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshopparametersmetacontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShopParametersOrderPreferencesControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshopparametersorderpreferencescontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShopParametersOrderPreferencesControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshopparametersorderpreferencescontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShopParametersProductPreferencesControllerPostProcess\u003cHookName\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshopparametersproductpreferencescontrollerpostprocesshooknamebefore/"
+                    },
+                
+                    {
+                        name: "actionAdminShopParametersProductPreferencesControllerPostProcessBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminshopparametersproductpreferencescontrollerpostprocessbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminSortAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminsortafter/"
+                    },
+                
+                    {
+                        name: "actionAdminSortBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminsortbefore/"
+                    },
+                
+                    {
+                        name: "actionAdminThemesControllerUpdateoptionsAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionadminthemescontrollerupdateoptionsafter/"
+                    },
+                
+                    {
+                        name: "actionAfterCreate\u003cFormName\u003eFormHandler",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionaftercreateformnameformhandler/"
+                    },
+                
+                    {
+                        name: "actionAfterUpdate\u003cFormName\u003eFormHandler",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionafterupdateformnameformhandler/"
+                    },
+                
+                    {
+                        name: "actionAjaxDie\u003cController\u003e\u003cMethod\u003eBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionajaxdiecontrollermethodbefore/"
+                    },
+                
+                    {
+                        name: "actionAjaxDieBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionajaxdiebefore/"
+                    },
+                
+                    {
+                        name: "actionAttributeCombinationDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionattributecombinationdelete/"
+                    },
+                
+                    {
+                        name: "actionAttributeCombinationSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionattributecombinationsave/"
+                    },
+                
+                    {
+                        name: "actionAttributeDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionattributedelete/"
+                    },
+                
+                    {
+                        name: "actionAttributeGroupDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionattributegroupdelete/"
+                    },
+                
+                    {
+                        name: "actionAttributeGroupSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionattributegroupsave/"
+                    },
+                
+                    {
+                        name: "actionAttributeSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionattributesave/"
+                    },
+                
+                    {
+                        name: "actionAuthentication",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionauthentication/"
+                    },
+                
+                    {
+                        name: "actionAuthenticationBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionauthenticationbefore/"
+                    },
+                
+                    {
+                        name: "actionBeforeAjaxDie\u003cController\u003e\u003cMethod\u003e",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionbeforeajaxdiecontrollermethod/"
+                    },
+                
+                    {
+                        name: "actionBeforeCreate\u003cFormName\u003eFormHandler",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionbeforecreateformnameformhandler/"
+                    },
+                
+                    {
+                        name: "actionBeforeUpdate\u003cFormName\u003eFormHandler",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionbeforeupdateformnameformhandler/"
+                    },
+                
+                    {
+                        name: "actionBuildFrontEndObject",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionbuildfrontendobject/"
+                    },
+                
+                    {
+                        name: "actionBuildMailLayoutVariables",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionbuildmaillayoutvariables/"
+                    },
+                
+                    {
+                        name: "actionCarrierProcess",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncarrierprocess/"
+                    },
+                
+                    {
+                        name: "actionCarrierUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncarrierupdate/"
+                    },
+                
+                    {
+                        name: "actionCartSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncartsave/"
+                    },
+                
+                    {
+                        name: "actionCartSummary",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncartsummary/"
+                    },
+                
+                    {
+                        name: "actionCartUpdateQuantityBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncartupdatequantitybefore/"
+                    },
+                
+                    {
+                        name: "actionCategoryAdd",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncategoryadd/"
+                    },
+                
+                    {
+                        name: "actionCategoryDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncategorydelete/"
+                    },
+                
+                    {
+                        name: "actionCategoryUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncategoryupdate/"
+                    },
+                
+                    {
+                        name: "actionCheckoutRender",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncheckoutrender/"
+                    },
+                
+                    {
+                        name: "actionClearCache",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionclearcache/"
+                    },
+                
+                    {
+                        name: "actionClearCompileCache",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionclearcompilecache/"
+                    },
+                
+                    {
+                        name: "actionClearSf2Cache",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionclearsf2cache/"
+                    },
+                
+                    {
+                        name: "actionControllerInitAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncontrollerinitafter/"
+                    },
+                
+                    {
+                        name: "actionControllerInitBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncontrollerinitbefore/"
+                    },
+                
+                    {
+                        name: "actionCustomerAccountAdd",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncustomeraccountadd/"
+                    },
+                
+                    {
+                        name: "actionCustomerAccountUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncustomeraccountupdate/"
+                    },
+                
+                    {
+                        name: "actionCustomerAddGroups",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncustomeraddgroups/"
+                    },
+                
+                    {
+                        name: "actionCustomerBeforeUpdateGroup",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncustomerbeforeupdategroup/"
+                    },
+                
+                    {
+                        name: "actionCustomerLogoutAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncustomerlogoutafter/"
+                    },
+                
+                    {
+                        name: "actionCustomerLogoutBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioncustomerlogoutbefore/"
+                    },
+                
+                    {
+                        name: "actionDeleteGDPRCustomer",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondeletegdprcustomer/"
+                    },
+                
+                    {
+                        name: "actionDeliveryPriceByPrice",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondeliverypricebyprice/"
+                    },
+                
+                    {
+                        name: "actionDeliveryPriceByWeight",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondeliverypricebyweight/"
+                    },
+                
+                    {
+                        name: "actionDispatcher",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondispatcher/"
+                    },
+                
+                    {
+                        name: "actionDispatcherAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondispatcherafter/"
+                    },
+                
+                    {
+                        name: "actionDispatcherBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondispatcherbefore/"
+                    },
+                
+                    {
+                        name: "actionDownloadAttachment",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiondownloadattachment/"
+                    },
+                
+                    {
+                        name: "actionEmailAddAfterContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionemailaddaftercontent/"
+                    },
+                
+                    {
+                        name: "actionEmailAddBeforeContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionemailaddbeforecontent/"
+                    },
+                
+                    {
+                        name: "actionEmailSendBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionemailsendbefore/"
+                    },
+                
+                    {
+                        name: "actionExportGDPRData",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionexportgdprdata/"
+                    },
+                
+                    {
+                        name: "actionFeatureDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfeaturedelete/"
+                    },
+                
+                    {
+                        name: "actionFeatureSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfeaturesave/"
+                    },
+                
+                    {
+                        name: "actionFeatureValueDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfeaturevaluedelete/"
+                    },
+                
+                    {
+                        name: "actionFeatureValueSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfeaturevaluesave/"
+                    },
+                
+                    {
+                        name: "actionFilterDeliveryOptionList",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfilterdeliveryoptionlist/"
+                    },
+                
+                    {
+                        name: "actionFrontControllerInitAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfrontcontrollerinitafter/"
+                    },
+                
+                    {
+                        name: "actionFrontControllerInitBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfrontcontrollerinitbefore/"
+                    },
+                
+                    {
+                        name: "actionFrontControllerSetMedia",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfrontcontrollersetmedia/"
+                    },
+                
+                    {
+                        name: "actionFrontControllerSetVariables",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionfrontcontrollersetvariables/"
+                    },
+                
+                    {
+                        name: "actionGenerateDocumentReference",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongeneratedocumentreference/"
+                    },
+                
+                    {
+                        name: "actionGetAdminOrderButtons",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetadminorderbuttons/"
+                    },
+                
+                    {
+                        name: "actionGetAdminToolbarButtons",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetadmintoolbarbuttons/"
+                    },
+                
+                    {
+                        name: "actionGetAlternativeSearchPanels",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetalternativesearchpanels/"
+                    },
+                
+                    {
+                        name: "actionGetExtraMailTemplateVars",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetextramailtemplatevars/"
+                    },
+                
+                    {
+                        name: "actionGetIDZoneByAddressID",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetidzonebyaddressid/"
+                    },
+                
+                    {
+                        name: "actionGetMailLayoutTransformations",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetmaillayouttransformations/"
+                    },
+                
+                    {
+                        name: "actionGetProductPropertiesAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetproductpropertiesafter/"
+                    },
+                
+                    {
+                        name: "actionGetProductPropertiesAfterUnitPrice",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetproductpropertiesafterunitprice/"
+                    },
+                
+                    {
+                        name: "actionGetProductPropertiesBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiongetproductpropertiesbefore/"
+                    },
+                
+                    {
+                        name: "actionHtaccessCreate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionhtaccesscreate/"
+                    },
+                
+                    {
+                        name: "actionInvoiceNumberFormatted",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actioninvoicenumberformatted/"
+                    },
+                
+                    {
+                        name: "actionListMailThemes",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionlistmailthemes/"
+                    },
+                
+                    {
+                        name: "actionListModules",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionlistmodules/"
+                    },
+                
+                    {
+                        name: "actionLoggerLogMessage",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionloggerlogmessage/"
+                    },
+                
+                    {
+                        name: "actionMailAlterMessageBeforeSend",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmailaltermessagebeforesend/"
+                    },
+                
+                    {
+                        name: "actionModifyFrontendSitemap",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmodifyfrontendsitemap/"
+                    },
+                
+                    {
+                        name: "actionModuleInstallAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleinstallafter/"
+                    },
+                
+                    {
+                        name: "actionModuleInstallBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleinstallbefore/"
+                    },
+                
+                    {
+                        name: "actionModuleMailAlertSendCustomer",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmodulemailalertsendcustomer/"
+                    },
+                
+                    {
+                        name: "actionModuleRegisterHookAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleregisterhookafter/"
+                    },
+                
+                    {
+                        name: "actionModuleRegisterHookBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleregisterhookbefore/"
+                    },
+                
+                    {
+                        name: "actionModuleUninstallAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleuninstallafter/"
+                    },
+                
+                    {
+                        name: "actionModuleUninstallBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleuninstallbefore/"
+                    },
+                
+                    {
+                        name: "actionModuleUnRegisterHookAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleunregisterhookafter/"
+                    },
+                
+                    {
+                        name: "actionModuleUnRegisterHookBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionmoduleunregisterhookbefore/"
+                    },
+                
+                    {
+                        name: "actionNewsletterRegistrationAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionnewsletterregistrationafter/"
+                    },
+                
+                    {
+                        name: "actionNewsletterRegistrationBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionnewsletterregistrationbefore/"
+                    },
+                
+                    {
+                        name: "actionObject\u003cClassName\u003eAddAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectclassnameaddafter/"
+                    },
+                
+                    {
+                        name: "actionObject\u003cClassName\u003eAddBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectclassnameaddbefore/"
+                    },
+                
+                    {
+                        name: "actionObject\u003cClassName\u003eDeleteAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectclassnamedeleteafter/"
+                    },
+                
+                    {
+                        name: "actionObject\u003cClassName\u003eDeleteBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectclassnamedeletebefore/"
+                    },
+                
+                    {
+                        name: "actionObject\u003cClassName\u003eUpdateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectclassnameupdateafter/"
+                    },
+                
+                    {
+                        name: "actionObject\u003cClassName\u003eUpdateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectclassnameupdatebefore/"
+                    },
+                
+                    {
+                        name: "actionObjectAddAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectaddafter/"
+                    },
+                
+                    {
+                        name: "actionObjectAddBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectaddbefore/"
+                    },
+                
+                    {
+                        name: "actionObjectAttributeAddBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectattributeaddbefore/"
+                    },
+                
+                    {
+                        name: "actionObjectAttributeGroupAddBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectattributegroupaddbefore/"
+                    },
+                
+                    {
+                        name: "actionObjectDeleteAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectdeleteafter/"
+                    },
+                
+                    {
+                        name: "actionObjectDeleteBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectdeletebefore/"
+                    },
+                
+                    {
+                        name: "actionObjectProductCommentValidateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectproductcommentvalidateafter/"
+                    },
+                
+                    {
+                        name: "actionObjectProductInCartDeleteAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectproductincartdeleteafter/"
+                    },
+                
+                    {
+                        name: "actionObjectProductInCartDeleteBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectproductincartdeletebefore/"
+                    },
+                
+                    {
+                        name: "actionObjectUpdateAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectupdateafter/"
+                    },
+                
+                    {
+                        name: "actionObjectUpdateBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionobjectupdatebefore/"
+                    },
+                
+                    {
+                        name: "actionOnImageCutAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiononimagecutafter/"
+                    },
+                
+                    {
+                        name: "actionOnImageResizeAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiononimageresizeafter/"
+                    },
+                
+                    {
+                        name: "actionOrderEdited",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionorderedited/"
+                    },
+                
+                    {
+                        name: "actionOrderHistoryAddAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionorderhistoryaddafter/"
+                    },
+                
+                    {
+                        name: "actionOrderReturn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionorderreturn/"
+                    },
+                
+                    {
+                        name: "actionOrderSlipAdd",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionorderslipadd/"
+                    },
+                
+                    {
+                        name: "actionOrderStatusPostUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionorderstatuspostupdate/"
+                    },
+                
+                    {
+                        name: "actionOrderStatusUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionorderstatusupdate/"
+                    },
+                
+                    {
+                        name: "actionOutputHTMLBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionoutputhtmlbefore/"
+                    },
+                
+                    {
+                        name: "actionOverrideEmployeeImage",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionoverrideemployeeimage/"
+                    },
+                
+                    {
+                        name: "actionPasswordRenew",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpasswordrenew/"
+                    },
+                
+                    {
+                        name: "actionPaymentCCAdd",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpaymentccadd/"
+                    },
+                
+                    {
+                        name: "actionPaymentConfirmation",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpaymentconfirmation/"
+                    },
+                
+                    {
+                        name: "actionPDFInvoiceRender",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpdfinvoicerender/"
+                    },
+                
+                    {
+                        name: "actionPresentCart",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentcart/"
+                    },
+                
+                    {
+                        name: "actionPresentModule",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentmodule/"
+                    },
+                
+                    {
+                        name: "actionPresentOrder",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentorder/"
+                    },
+                
+                    {
+                        name: "actionPresentOrderReturn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentorderreturn/"
+                    },
+                
+                    {
+                        name: "actionPresentPaymentOptions",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentpaymentoptions/"
+                    },
+                
+                    {
+                        name: "actionPresentProduct",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentproduct/"
+                    },
+                
+                    {
+                        name: "actionPresentProductListing",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionpresentproductlisting/"
+                    },
+                
+                    {
+                        name: "actionProductActivation",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductactivation/"
+                    },
+                
+                    {
+                        name: "actionProductAdd",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductadd/"
+                    },
+                
+                    {
+                        name: "actionProductAttributeDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductattributedelete/"
+                    },
+                
+                    {
+                        name: "actionProductAttributeUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductattributeupdate/"
+                    },
+                
+                    {
+                        name: "actionProductCancel",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductcancel/"
+                    },
+                
+                    {
+                        name: "actionProductCoverage",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductcoverage/"
+                    },
+                
+                    {
+                        name: "actionProductDelete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductdelete/"
+                    },
+                
+                    {
+                        name: "actionProductOutOfStock",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductoutofstock/"
+                    },
+                
+                    {
+                        name: "actionProductPriceCalculation",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductpricecalculation/"
+                    },
+                
+                    {
+                        name: "actionProductSave",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductsave/"
+                    },
+                
+                    {
+                        name: "actionProductSearchAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductsearchafter/"
+                    },
+                
+                    {
+                        name: "actionProductSearchProviderRunQueryAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductsearchproviderrunqueryafter/"
+                    },
+                
+                    {
+                        name: "actionProductSearchProviderRunQueryBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductsearchproviderrunquerybefore/"
+                    },
+                
+                    {
+                        name: "actionProductUpdate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionproductupdate/"
+                    },
+                
+                    {
+                        name: "actionSearch",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionsearch/"
+                    },
+                
+                    {
+                        name: "actionSetInvoice",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionsetinvoice/"
+                    },
+                
+                    {
+                        name: "actionShopDataDuplication",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionshopdataduplication/"
+                    },
+                
+                    {
+                        name: "actionSubmitAccountBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionsubmitaccountbefore/"
+                    },
+                
+                    {
+                        name: "actionSubmitCustomerAddressForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionsubmitcustomeraddressform/"
+                    },
+                
+                    {
+                        name: "actionTaxManager",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actiontaxmanager/"
+                    },
+                
+                    {
+                        name: "actionUpdateLangAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionupdatelangafter/"
+                    },
+                
+                    {
+                        name: "actionUpdateQuantity",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionupdatequantity/"
+                    },
+                
+                    {
+                        name: "actionValidateCustomerAddressForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionvalidatecustomeraddressform/"
+                    },
+                
+                    {
+                        name: "actionValidateOrder",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionvalidateorder/"
+                    },
+                
+                    {
+                        name: "actionValidateOrderAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionvalidateorderafter/"
+                    },
+                
+                    {
+                        name: "actionValidateStepComplete",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionvalidatestepcomplete/"
+                    },
+                
+                    {
+                        name: "actionWatermark",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionwatermark/"
+                    },
+                
+                    {
+                        name: "actionWishlistAddProduct",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/actionwishlistaddproduct/"
+                    },
+                
+                    {
+                        name: "additionalCustomerAddressFields",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/additionalcustomeraddressfields/"
+                    },
+                
+                    {
+                        name: "additionalCustomerFormFields",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/additionalcustomerformfields/"
+                    },
+                
+                    {
+                        name: "addWebserviceResources",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/addwebserviceresources/"
+                    },
+                
+                    {
+                        name: "dashboardData",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/dashboarddata/"
+                    },
+                
+                    {
+                        name: "dashboardZoneOne",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/dashboardzoneone/"
+                    },
+                
+                    {
+                        name: "dashboardZoneThree",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/dashboardzonethree/"
+                    },
+                
+                    {
+                        name: "dashboardZoneTwo",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/dashboardzonetwo/"
+                    },
+                
+                    {
+                        name: "deleteProductAttribute",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/deleteproductattribute/"
+                    },
+                
+                    {
+                        name: "displayAdditionalCustomerAddressFields",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadditionalcustomeraddressfields/"
+                    },
+                
+                    {
+                        name: "displayAddressSelectorBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayaddressselectorbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminAfterHeader",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminafterheader/"
+                    },
+                
+                    {
+                        name: "displayAdminCustomers",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadmincustomers/"
+                    },
+                
+                    {
+                        name: "displayAdminEndContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminendcontent/"
+                    },
+                
+                    {
+                        name: "displayAdminForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminform/"
+                    },
+                
+                    {
+                        name: "displayAdminGridTableAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadmingridtableafter/"
+                    },
+                
+                    {
+                        name: "displayAdminGridTableBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadmingridtablebefore/"
+                    },
+                
+                    {
+                        name: "displayAdminListAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminlistafter/"
+                    },
+                
+                    {
+                        name: "displayAdminListBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminlistbefore/"
+                    },
+                
+                    {
+                        name: "displayAdminNavBarBeforeEnd",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminnavbarbeforeend/"
+                    },
+                
+                    {
+                        name: "displayAdminOptions",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminoptions/"
+                    },
+                
+                    {
+                        name: "displayAdminOrder",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminorder/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderCreateExtraButtons",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordercreateextrabuttons/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderMain",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordermain/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderMainBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordermainbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderSide",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminorderside/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderSideBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordersidebottom/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderTabContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordertabcontent/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderTabLink",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordertablink/"
+                    },
+                
+                    {
+                        name: "displayAdminOrderTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminordertop/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsCombinationBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductscombinationbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsExtra",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsextra/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsMainStepLeftColumnBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsmainstepleftcolumnbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsMainStepLeftColumnMiddle",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsmainstepleftcolumnmiddle/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsMainStepRightColumnBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsmainsteprightcolumnbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsOptionsStepBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsoptionsstepbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsOptionsStepTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsoptionssteptop/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsPriceStepBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductspricestepbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsQuantitiesStepBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsquantitiesstepbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsSeoStepBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsseostepbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminProductsShippingStepBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminproductsshippingstepbottom/"
+                    },
+                
+                    {
+                        name: "displayAdminStatsGraphEngine",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminstatsgraphengine/"
+                    },
+                
+                    {
+                        name: "displayAdminStatsGridEngine",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminstatsgridengine/"
+                    },
+                
+                    {
+                        name: "displayAdminStatsModules",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminstatsmodules/"
+                    },
+                
+                    {
+                        name: "displayAdminThemesListAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminthemeslistafter/"
+                    },
+                
+                    {
+                        name: "displayAdminView",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayadminview/"
+                    },
+                
+                    {
+                        name: "displayAfterBodyOpeningTag",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayafterbodyopeningtag/"
+                    },
+                
+                    {
+                        name: "displayAfterCarrier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayaftercarrier/"
+                    },
+                
+                    {
+                        name: "displayAfterProductThumbs",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayafterproductthumbs/"
+                    },
+                
+                    {
+                        name: "displayAfterTitleTag",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayaftertitletag/"
+                    },
+                
+                    {
+                        name: "displayAttributeForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayattributeform/"
+                    },
+                
+                    {
+                        name: "displaybackOfficeCategory",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybackofficecategory/"
+                    },
+                
+                    {
+                        name: "displaybackOfficeEmployeeMenu",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybackofficeemployeemenu/"
+                    },
+                
+                    {
+                        name: "displaybackOfficeHeader",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybackofficeheader/"
+                    },
+                
+                    {
+                        name: "displaybackOfficeTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybackofficetop/"
+                    },
+                
+                    {
+                        name: "displayBanner",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybanner/"
+                    },
+                
+                    {
+                        name: "displayBeforeBodyClosingTag",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybeforebodyclosingtag/"
+                    },
+                
+                    {
+                        name: "displayBeforeCarrier",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaybeforecarrier/"
+                    },
+                
+                    {
+                        name: "displayCarrierExtraContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycarrierextracontent/"
+                    },
+                
+                    {
+                        name: "displayCartExtraProductActions",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycartextraproductactions/"
+                    },
+                
+                    {
+                        name: "displayCartModalContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycartmodalcontent/"
+                    },
+                
+                    {
+                        name: "displayCartModalFooter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycartmodalfooter/"
+                    },
+                
+                    {
+                        name: "displayCheckoutBeforeConfirmation",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycheckoutbeforeconfirmation/"
+                    },
+                
+                    {
+                        name: "displayCheckoutSubtotalDetails",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycheckoutsubtotaldetails/"
+                    },
+                
+                    {
+                        name: "displayCheckoutSummaryTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycheckoutsummarytop/"
+                    },
+                
+                    {
+                        name: "displayCMSDisputeInformation",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycmsdisputeinformation/"
+                    },
+                
+                    {
+                        name: "displayCMSPrintButton",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycmsprintbutton/"
+                    },
+                
+                    {
+                        name: "displayContactContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycontactcontent/"
+                    },
+                
+                    {
+                        name: "displayContactLeftColumn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycontactleftcolumn/"
+                    },
+                
+                    {
+                        name: "displayContactRightColumn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycontactrightcolumn/"
+                    },
+                
+                    {
+                        name: "displayContentWrapperBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycontentwrapperbottom/"
+                    },
+                
+                    {
+                        name: "displayContentWrapperTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycontentwrappertop/"
+                    },
+                
+                    {
+                        name: "displayCrossSellingShoppingCart",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycrosssellingshoppingcart/"
+                    },
+                
+                    {
+                        name: "displayCustomerAccount",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycustomeraccount/"
+                    },
+                
+                    {
+                        name: "displayCustomerAccountForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycustomeraccountform/"
+                    },
+                
+                    {
+                        name: "displayCustomerAccountFormTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycustomeraccountformtop/"
+                    },
+                
+                    {
+                        name: "displayCustomerLoginFormAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycustomerloginformafter/"
+                    },
+                
+                    {
+                        name: "displayCustomization",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaycustomization/"
+                    },
+                
+                    {
+                        name: "displayDashboardToolbarIcons",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaydashboardtoolbaricons/"
+                    },
+                
+                    {
+                        name: "displayDashboardToolbarTopMenu",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaydashboardtoolbartopmenu/"
+                    },
+                
+                    {
+                        name: "displayDashboardTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaydashboardtop/"
+                    },
+                
+                    {
+                        name: "displayEmptyModuleCategoryExtraMessage",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayemptymodulecategoryextramessage/"
+                    },
+                
+                    {
+                        name: "displayExpressCheckout",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayexpresscheckout/"
+                    },
+                
+                    {
+                        name: "displayFeatureForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfeatureform/"
+                    },
+                
+                    {
+                        name: "displayFeaturePostProcess",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfeaturepostprocess/"
+                    },
+                
+                    {
+                        name: "displayFeatureValueForm",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfeaturevalueform/"
+                    },
+                
+                    {
+                        name: "displayFeatureValuePostProcess",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfeaturevaluepostprocess/"
+                    },
+                
+                    {
+                        name: "displayFooter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfooter/"
+                    },
+                
+                    {
+                        name: "displayFooterAfter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfooterafter/"
+                    },
+                
+                    {
+                        name: "displayFooterBefore",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfooterbefore/"
+                    },
+                
+                    {
+                        name: "displayFooterCategory",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfootercategory/"
+                    },
+                
+                    {
+                        name: "displayFooterProduct",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayfooterproduct/"
+                    },
+                
+                    {
+                        name: "displayGDPRConsent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaygdprconsent/"
+                    },
+                
+                    {
+                        name: "displayHeader",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayheader/"
+                    },
+                
+                    {
+                        name: "displayHeaderCategory",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayheadercategory/"
+                    },
+                
+                    {
+                        name: "displayHome",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayhome/"
+                    },
+                
+                    {
+                        name: "displayInvoiceLegalFreeText",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayinvoicelegalfreetext/"
+                    },
+                
+                    {
+                        name: "displayLeftColumn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayleftcolumn/"
+                    },
+                
+                    {
+                        name: "displayLeftColumnProduct",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayleftcolumnproduct/"
+                    },
+                
+                    {
+                        name: "displayMaintenance",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaymaintenance/"
+                    },
+                
+                    {
+                        name: "displayModuleConfigureExtraButons",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaymoduleconfigureextrabuttons/"
+                    },
+                
+                    {
+                        name: "displayMyAccountBlock",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaymyaccountblock/"
+                    },
+                
+                    {
+                        name: "displayNav1",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaynav1/"
+                    },
+                
+                    {
+                        name: "displayNav2",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaynav2/"
+                    },
+                
+                    {
+                        name: "displayNavFullWidth",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaynavfullwidth/"
+                    },
+                
+                    {
+                        name: "displayNewsletterRegistration",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaynewsletterregistration/"
+                    },
+                
+                    {
+                        name: "displayNotFound",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaynotfound/"
+                    },
+                
+                    {
+                        name: "displayOrderConfirmation",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayorderconfirmation/"
+                    },
+                
+                    {
+                        name: "displayOrderConfirmation1",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayorderconfirmation1/"
+                    },
+                
+                    {
+                        name: "displayOrderConfirmation2",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayorderconfirmation2/"
+                    },
+                
+                    {
+                        name: "displayOrderDetail",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayorderdetail/"
+                    },
+                
+                    {
+                        name: "displayOrderPreview",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayorderpreview/"
+                    },
+                
+                    {
+                        name: "displayOverrideTemplate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayoverridetemplate/"
+                    },
+                
+                    {
+                        name: "displayPaymentByBinaries",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaypaymentbybinaries/"
+                    },
+                
+                    {
+                        name: "displayPaymentReturn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaypaymentreturn/"
+                    },
+                
+                    {
+                        name: "displayPaymentTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaypaymenttop/"
+                    },
+                
+                    {
+                        name: "displayPDF\u003cTemplate\u003e",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaypdftemplate/"
+                    },
+                
+                    {
+                        name: "displayPersonalInformationTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaypersonalinformationtop/"
+                    },
+                
+                    {
+                        name: "displayProductActions",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayproductactions/"
+                    },
+                
+                    {
+                        name: "displayProductAdditionalInfo",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayproductadditionalinfo/"
+                    },
+                
+                    {
+                        name: "displayProductExtraContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayproductextracontent/"
+                    },
+                
+                    {
+                        name: "displayProductListReviews",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayproductlistreviews/"
+                    },
+                
+                    {
+                        name: "displayProductPriceBlock",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayproductpriceblock/"
+                    },
+                
+                    {
+                        name: "displayReassurance",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayreassurance/"
+                    },
+                
+                    {
+                        name: "displayRightColumn",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayrightcolumn/"
+                    },
+                
+                    {
+                        name: "displayRightColumnProduct",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayrightcolumnproduct/"
+                    },
+                
+                    {
+                        name: "displaySearch",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaysearch/"
+                    },
+                
+                    {
+                        name: "displayShoppingCart",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayshoppingcart/"
+                    },
+                
+                    {
+                        name: "displayShoppingCartFooter",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displayshoppingcartfooter/"
+                    },
+                
+                    {
+                        name: "displayTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaytop/"
+                    },
+                
+                    {
+                        name: "displayWrapperBottom",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaywrapperbottom/"
+                    },
+                
+                    {
+                        name: "displayWrapperTop",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/displaywrappertop/"
+                    },
+                
+                    {
+                        name: "filterCategoryContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filtercategorycontent/"
+                    },
+                
+                    {
+                        name: "filterCmsCategoryContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filtercmscategorycontent/"
+                    },
+                
+                    {
+                        name: "filterCmsContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filtercmscontent/"
+                    },
+                
+                    {
+                        name: "filterHtmlContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filterhtmlcontent/"
+                    },
+                
+                    {
+                        name: "filterManufacturerContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filtermanufacturercontent/"
+                    },
+                
+                    {
+                        name: "filterProductContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filterproductcontent/"
+                    },
+                
+                    {
+                        name: "filterProductSearch",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filterproductsearch/"
+                    },
+                
+                    {
+                        name: "filterSupplierContent",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/filtersuppliercontent/"
+                    },
+                
+                    {
+                        name: "gSitemapAppendUrls",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/gsitemapappendurls/"
+                    },
+                
+                    {
+                        name: "legacyblockkpi",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/legacyblockkpi/"
+                    },
+                
+                    {
+                        name: "moduleRoutes",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/moduleroutes/"
+                    },
+                
+                    {
+                        name: "overrideLayoutTemplate",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/overridelayouttemplate/"
+                    },
+                
+                    {
+                        name: "overrideMinimalPurchasePrice",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/overrideminimalpurchaseprice/"
+                    },
+                
+                    {
+                        name: "productSearchProvider",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/productsearchprovider/"
+                    },
+                
+                    {
+                        name: "sendMailAlterTemplateVars",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/sendmailaltertemplatevars/"
+                    },
+                
+                    {
+                        name: "termsAndConditions",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/termsandconditions/"
+                    },
+                
+                    {
+                        name: "validateCustomerFormFields",
+                        url: "/8/modules/concepts/hooks/list-of-hooks/validatecustomerformfields/"
+                    },
+                
+            
+        ];
+
+        let customFacetFilter = 'version:1.7';
+
+        let showVersionNumber = false;
+
+        docsearch({
+            appId: '79DO4UR9Y5',
+            apiKey: '352524fc37137a45610faa44bcc1a47c',
+            indexName: 'prestashop',
+            placeholder: 'Search DevDocs',
+            searchParameters: {
+                facetFilters: [
+                    customFacetFilter
+                ],
+            },
+            container: '#docsearch-container',
+            transformSearchClient: (searchClient) => {
+                return {
+                    ...searchClient,
+                    search: alterSearch(searchClient.search)
+                };
+            },
+            getMissingResultsUrl: ({ query }) => {
+                return "https:\/\/github.com\/PrestaShop\/docs\/issues/new?title=Missing+documentation+for+topic+" + query;
+            },
+            transformItems(items) {                
+                return items.map((item) => {
+                    if(showVersionNumber){
+                        const url = item.url;
+                        const version = url.replace("https:\/\/devdocs.prestashop-project.org\/", "").split("/")[0];
+                        const versionPill = '<span class="version-pill">' + version + '</span>';
+                        if(item._snippetResult.content){
+                            item._snippetResult.content.value = versionPill + item._snippetResult.content.value;
+                        }
+                        else if(item._snippetResult.hierarchy){
+                            if(!item._snippetResult.hierarchy.lvl0){
+                                item._snippetResult.hierarchy.lvl0 = {
+                                    value : versionPill
+                                };
+                            } else {
+                                item._snippetResult.hierarchy.lvl0.value = versionPill + item._snippetResult.hierarchy.lvl0.value;
+                            }
+                            if(item._snippetResult.hierarchy.lvl1){
+                                item._snippetResult.hierarchy.lvl1.value = versionPill + item._snippetResult.hierarchy.lvl1.value;
+                            }
+                        }
+                    }
+                    return item;
+                });
+            },
+        });
+
+
+        function alterSearch(func) {
+            return function (...args) {
+                const that = this;
+
+                return new Promise(async (resolve, reject) => {
+
+                    const interceptedResolveFunction = (response) => {
+                        
+                        let otherVersionAlert = document.getElementById("DocSearch-otherVersionAlert");
+                        if(otherVersionAlert){
+                            otherVersionAlert.remove();
+                        }
+                        
+                        const [interceptedResults] = response.results;
+                        if(interceptedResults.nbHits>0){
+                            showVersionNumber = false;
+                            resolve(response);
+                            return;
+                        }
+
+                        showVersionNumber = true;
+
+                        otherVersionAlert = document.createElement("div");
+                        otherVersionAlert.innerHTML = "Results found in other versions of the documentation:";
+                        otherVersionAlert.id = "DocSearch-otherVersionAlert";
+                        document.getElementsByClassName("DocSearch-Dropdown")[0].before(otherVersionAlert);
+                    
+                        
+                        const [searchQuery] = args;
+                        searchQuery[0].params.facetFilters = [];
+
+                        
+                        Promise.resolve(func.apply(that, [searchQuery])).then(resolve).catch(reject);
+                    };
+
+                    Promise.resolve(func.apply(that, args)).then(interceptedResolveFunction).catch(reject);
+
+                    const input = document.getElementById("docsearch-input");
+                    let dropdownContainer = document.getElementsByClassName("DocSearch-Dropdown")[0];
+                    
+                    const hookResults = matchHooks(input.value);
+
+                    const elements = document.getElementsByClassName("DocSearchGenericHooks");
+                    while(elements.length > 0){
+                        elements[0].parentNode.removeChild(elements[0]);
+                    }
+
+                    let appendHtml = "";
+                    hookResults.forEach(element => {
+                        appendHtml += `
+                            <li class="DocSearch-Hit" id="docsearch-item-0" role="option" aria-selected="false">
+                                <a href="` + element.url +  `">
+                                    <div class="DocSearch-Hit-Container">
+                                        <div class="DocSearch-Hit-icon">
+                                        </div>
+                                        <div class="DocSearch-Hit-content-wrapper">
+                                            <span class="DocSearch-Hit-title">
+                                            ` + element.name.replace(/>/g, "&gt;").replace(/</g, "&lt;") +  `
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>`;
+                    });
+
+                    if(hookResults.length>0){
+                        dropdownContainer.innerHTML = `<div class="DocSearchGenericHooks">
+                            <section class="DocSearch-Hits">
+                                <div class="DocSearch-Hit-source">Matching dynamic Hooks</div>
+                                    <ul role="listbox" aria-labelledby="docsearch-label" id="docsearch-list">
+                                        ` + appendHtml + `
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        `;
+                    }
+                });
+            };
+        }
+
+        const matchQueryWithDynamicHookName = (search, hookName) => {
+            const regex = new RegExp("\<(.*)\>", 'i');
+            const regexedHookName = hookName.replace(regex, "(.*)");
+            if(regexedHookName != hookName){
+                const hookRegex = new RegExp(regexedHookName, 'i');
+                return search.match(hookRegex);
+            }
+            return false;
+        }
+
+        const matchHooks = (query) => {
+            if(query.substring(0, 4).toLowerCase() == "hook"){
+                query = query.substring(4);
+            }
+
+            let hookPages = [];
+            hookReferential.forEach(element => { 
+                const matchesSearch = Boolean(matchQueryWithDynamicHookName(query, element.name));
+                if(matchesSearch){
+                    hookPages.push(element);
+                }
+            });
+            return hookPages;
+        }
+
+    </script>
 
 
     
     
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-2753771-44', 'auto');
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-BS6H6BCWTH"></script>
+		<script>
+			var doNotTrack = false;
+			if (!doNotTrack) {
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-BS6H6BCWTH', { 'anonymize_ip': false });
+			}
+		</script>
 	
-	ga('send', 'pageview');
-}
-</script>
+
 
   </body>
 </html>
